@@ -11,6 +11,7 @@
 | `app.js` | 계산 엔진 + 실시간 결과 + 맞춤 절세 진단 |
 | `privacy.html` | 개인정보처리방침 (쿠키·Google AdSense 안내 포함) |
 | `about.html` | 사이트 소개 및 계산 기준(법령 근거·미반영 항목) |
+| `ads.txt` | AdSense 게시자 확인(`pub-7905972440351261`) |
 | `robots.txt`, `sitemap.xml` | 검색엔진 수집용 |
 | `assets/og-cover.png` | SNS 공유 이미지 (1200×630) |
 
@@ -22,9 +23,8 @@
    ```bash
    grep -rl "tools.niceluckydays.com" . | xargs sed -i 's#https://tools.niceluckydays.com#https://내도메인#g'
    ```
-2. **AdSense 코드 삽입** — `index.html`의 `<!-- AdSense 슬롯 -->` 주석 두 곳(`.ad-slot[data-ad-slot="top"]`, `[data-ad-slot="result-bottom"]`)의
-   `<span>` 안내 문구를 실제 광고 단위 코드로 교체하세요. 미리보기에서 광고 자리를 숨기려면 URL 뒤에 `?ads=off`를 붙이면 됩니다.
-3. **ads.txt** — 애드센스 승인 후 게시자 ID로 `ads.txt`를 추가하세요.
+2. **AdSense** — 이미 적용되어 있습니다(2026-11-26). 게시자 ID `ca-pub-7905972440351261`, 광고 단위 `tools_top_banner`(6595337008)·`tools_result_bottom`(2808135239). 세 페이지 `<head>`에 AdSense 스크립트가 있고(자동 광고), `index.html`의 `.ad-slot` 두 곳에 디스플레이 광고 단위가 들어 있습니다. 광고 자리를 숨기려면 URL 뒤에 `?ads=off`를 붙이면 됩니다. 광고 단위를 바꿀 때는 `.ad-slot` 안의 `data-ad-slot` 값만 교체하세요.
+3. **ads.txt** — `ads.txt`(게시자 ID `pub-7905972440351261`)가 루트에 있습니다. 배포 후 `https://tools.niceluckydays.com/ads.txt`가 200으로 열리는지 확인하세요.
 4. **Search Console / 네이버 서치어드바이저** — 사이트 등록 후 `sitemap.xml` 제출.
 
 ## 로컬에서 확인
