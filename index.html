@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2026 연말정산 환급금 계산기 | 30초 만에 예상 환급액 확인 – 스마트 라이프 툴즈</title>
+<meta name="description" content="2026년 귀속(2027년 1~2월 정산) 연말정산 환급금을 30초 만에 계산해 보세요. 총급여·부양가족·신용카드·체크카드·월세·연금저축(IRP)을 입력하면 근로소득공제부터 결정세액까지 단계별로 보여주고, 내 소비 기준 맞춤 절세 포인트까지 알려드립니다.">
+<meta name="keywords" content="2026 연말정산, 연말정산 계산기, 환급금 계산기, 연말정산 환급금, 월세 세액공제, 연금저축 세액공제, IRP 세액공제, 신용카드 소득공제, 자녀세액공제">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="스마트 라이프 툴즈">
+<meta name="theme-color" content="#2563eb">
+<link rel="canonical" href="https://tools.niceluckydays.com/">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="스마트 라이프 툴즈">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="2026 연말정산 환급금 계산기 – 30초 만에 예상 환급액 확인">
+<meta property="og:description" content="총급여와 카드·월세·연금저축 납입액만 넣으면 예상 환급액과 단계별 세금 계산표, 맞춤 절세 진단까지 한 번에. 2026년 귀속 최신 세법 반영.">
+<meta property="og:url" content="https://tools.niceluckydays.com/">
+<meta property="og:image" content="https://tools.niceluckydays.com/assets/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026 연말정산 환급금 계산기">
+<meta name="twitter:description" content="30초 만에 예상 환급액 확인하고, 12월 31일 전에 챙길 공제까지 점검하세요.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232563eb'/%3E%3Ctext x='32' y='44' font-size='34' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3E%E2%82%A9%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://tools.niceluckydays.com/#website",
+      "url": "https://tools.niceluckydays.com/",
+      "name": "스마트 라이프 툴즈",
+      "inLanguage": "ko-KR",
+      "description": "돈과 생활에 바로 쓰는 무료 계산기 모음. 연말정산 환급금 계산기, 신년운세, 생활 계산기를 제공합니다."
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://tools.niceluckydays.com/#app",
+      "name": "2026 연말정산 환급금 계산기",
+      "url": "https://tools.niceluckydays.com/",
+      "applicationCategory": "FinanceApplication",
+      "applicationSubCategory": "TaxCalculator",
+      "operatingSystem": "Web",
+      "inLanguage": "ko-KR",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+      "featureList": [
+        "2026년 귀속 근로소득 연말정산 예상 환급액 계산",
+        "근로소득공제·인적공제·4대보험료·신용카드 소득공제 반영",
+        "월세 세액공제, 연금저축·IRP 세액공제, 자녀세액공제 반영",
+        "소비 패턴 기반 맞춤 절세 진단"
+      ],
+      "description": "총급여, 부양가족 수, 카드 사용액, 월세, 연금저축·IRP 납입액을 입력하면 2026년 귀속 연말정산 예상 환급액을 단계별 계산표와 함께 보여주는 무료 웹 계산기입니다."
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tools.niceluckydays.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "2026년 귀속 연말정산은 언제 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2026년 1월 1일부터 12월 31일까지 번 소득과 쓴 돈을 기준으로, 2027년 1~2월에 회사에서 연말정산을 합니다. 근로자는 2027년 1월 중순부터 열리는 국세청 연말정산 간소화 서비스에서 자료를 확인해 회사에 제출하고, 정산 결과는 보통 2월 급여에 반영됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "환급금은 언제, 어떻게 받나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "회사가 2027년 3월 10일까지 근로소득 지급명세서를 제출하고, 그 전후로 2월 급여 또는 3월 초에 환급액이 지급됩니다. 회사가 정산을 미루면 5월 종합소득세 신고로 직접 환급받을 수 있습니다. 추가 납부가 나온 경우에도 2월 급여에서 함께 정산됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "계산기 결과와 실제 환급액이 다른 이유는 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "이 계산기는 총급여, 부양가족, 4대보험료, 신용카드 등 사용액, 월세, 연금저축·IRP, 자녀 수만 반영합니다. 의료비·교육비·기부금·보장성보험료·주택자금(전세대출 이자, 주택담보대출 이자), 부양가족 추가공제(65세 이상·장애인), 중소기업 취업자 감면, 연금계좌 ISA 전환 추가공제 등은 반영하지 않아 실제와 차이가 날 수 있습니다. 정확한 금액은 홈택스 연말정산 미리보기와 회사 정산 결과로 확인하세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "12월 31일 전에 해야 환급이 커지는 공제는 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "연금저축·IRP 납입(합산 900만원까지, 총급여 5,500만원 이하 16.5%·초과 13.2%), 월세 세액공제(연 1,000만원까지 15~17%), 고향사랑기부금입니다. 이 세 가지는 해가 바뀌면 2026년분으로 되돌릴 수 없습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "신용카드 25% 규칙은 무슨 뜻인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "신용카드·체크카드·현금영수증·전통시장·대중교통 사용액을 합친 금액이 총급여의 25%를 넘어야 그 초과분부터 소득공제가 시작됩니다. 예를 들어 총급여 4,500만원이면 연 1,125만원을 넘게 쓴 부분만 공제 대상입니다. 최저사용금액은 신용카드 사용분에서 먼저 채워지므로, 25%를 넘긴 지출은 체크카드(30%)나 전통시장·대중교통(40%)으로 쓰는 편이 공제가 큽니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2026년 귀속 자녀세액공제는 얼마인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "기본공제 대상 자녀 중 9세 이상(2016년 이전 출생, 2017년생은 제외) 자녀에 대해 1명 25만원, 2명 55만원, 3명 이상은 55만원에 2명을 넘는 1명당 40만원을 더한 금액입니다(3명 95만원). 금액은 자녀 기본공제 1인당 150만원과 별도로 계산됩니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#calc">계산기로 바로 가기</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="스마트 라이프 툴즈 홈">
+      <span class="brand-mark" aria-hidden="true">₩</span>
+      <span class="brand-text">스마트 라이프 툴즈</span>
+    </a>
+    <nav class="site-nav" aria-label="주요 메뉴">
+      <a href="#calc" class="is-active">연말정산 계산기</a>
+      <a href="#guide">계산 기준</a>
+      <a href="#faq">자주 묻는 질문</a>
+      <a href="about.html">사이트 소개</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">2026년 귀속 · 2027년 1~2월 정산 기준</p>
+      <h1>2026 연말정산<br class="br-mobile"> 환급금 계산기</h1>
+      <p class="hero-sub">연봉과 카드·월세·연금저축 납입액만 넣으면 <strong>예상 환급액</strong>이 바로 나옵니다.<br class="br-desktop"> 근로소득공제부터 결정세액까지 단계별로 보여드려요.</p>
+      <ul class="hero-badges">
+        <li>국세청 고시 2026년 요율 반영</li>
+        <li>회원가입·개인정보 입력 없음</li>
+        <li>모바일에서도 30초</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AdSense 슬롯: 상단 배너 -->
+  <div class="container">
+    <div class="ad-slot" data-ad-slot="top" aria-hidden="true">
+      <span>광고 영역 · AdSense 상단 배너 삽입 위치</span>
+    </div>
+  </div>
+
+  <!-- ===== CALCULATOR ===== -->
+  <section id="calc" class="calc-section container" aria-labelledby="calcTitle">
+    <h2 id="calcTitle" class="sr-only">연말정산 환급금 계산기</h2>
+
+    <div class="calc-grid">
+      <!-- 입력 -->
+      <form class="card form-card" id="calcForm" novalidate>
+        <div class="card-head">
+          <h3>내 정보 입력</h3>
+          <button type="button" class="text-btn" id="fillSample">예시 값 채우기</button>
+        </div>
+
+        <fieldset class="field-group">
+          <legend>1. 소득</legend>
+
+          <div class="field">
+            <label for="gross">연간 총급여 <span class="unit">만원</span></label>
+            <div class="input-wrap">
+              <input id="gross" name="gross" type="text" inputmode="numeric" autocomplete="off"
+                     data-unit="man" placeholder="4,500" aria-describedby="grossHelp">
+              <span class="suffix">만원</span>
+            </div>
+            <p class="help" id="grossHelp">세전 연봉에서 비과세(식대 등)를 뺀 금액이에요. 원천징수영수증의 '총급여' 칸과 같습니다.</p>
+            <div class="chips" role="group" aria-label="연봉 빠른 선택">
+              <button type="button" class="chip" data-gross="3000">3,000만</button>
+              <button type="button" class="chip" data-gross="4500">4,500만</button>
+              <button type="button" class="chip" data-gross="6000">6,000만</button>
+              <button type="button" class="chip" data-gross="8000">8,000만</button>
+              <button type="button" class="chip" data-gross="10000">1억</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="label-row">
+              <label for="paid">기납부세액 <span class="unit">만원</span></label>
+              <label class="switch-label">
+                <input type="checkbox" id="autoPaid" checked>
+                <span class="switch" aria-hidden="true"></span>
+                <span>자동 추정</span>
+              </label>
+            </div>
+            <div class="input-wrap">
+              <input id="paid" name="paid" type="text" inputmode="numeric" autocomplete="off"
+                     data-unit="man" placeholder="자동 추정 중" disabled aria-describedby="paidHelp">
+              <span class="suffix">만원</span>
+            </div>
+            <p class="help" id="paidHelp">원천징수영수증의 '기납부세액(소득세)' 또는 월급명세서 소득세 × 12. 모르면 자동 추정을 켜 두세요.</p>
+          </div>
+
+          <div class="field">
+            <label class="switch-label switch-row">
+              <input type="checkbox" id="autoInsurance" checked>
+              <span class="switch" aria-hidden="true"></span>
+              <span>4대보험료 자동 계산 <em class="muted">(국민연금 4.75% · 건강 3.595% · 장기요양 · 고용 0.9%)</em></span>
+            </label>
+            <p class="help">본인 부담분은 전액 소득공제돼요. 직장인이 아니거나 직접 입력하려면 끄세요.</p>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>2. 가족</legend>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="family">부양가족 수 <span class="unit">본인 포함</span></label>
+              <div class="stepper">
+                <button type="button" class="step-btn" data-step="family" data-delta="-1" aria-label="부양가족 수 줄이기">−</button>
+                <input id="family" name="family" type="number" min="1" max="10" step="1" value="1" inputmode="numeric">
+                <button type="button" class="step-btn" data-step="family" data-delta="1" aria-label="부양가족 수 늘리기">+</button>
+              </div>
+              <p class="help">1명당 150만원 기본공제. 자녀 수보다 적으면 자녀로 자동 보정돼요.</p>
+            </div>
+
+            <div class="field">
+              <label for="children">자녀 수 <span class="unit">20세 이하</span></label>
+              <div class="stepper">
+                <button type="button" class="step-btn" data-step="children" data-delta="-1" aria-label="자녀 수 줄이기">−</button>
+                <input id="children" name="children" type="number" min="0" max="8" step="1" value="0" inputmode="numeric">
+                <button type="button" class="step-btn" data-step="children" data-delta="1" aria-label="자녀 수 늘리기">+</button>
+              </div>
+              <p class="help">카드 공제 한도에 반영</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="childrenCredit">그중 9세 이상 자녀 <span class="unit">명</span></label>
+            <div class="stepper">
+              <button type="button" class="step-btn" data-step="childrenCredit" data-delta="-1" aria-label="9세 이상 자녀 수 줄이기">−</button>
+              <input id="childrenCredit" name="childrenCredit" type="number" min="0" max="8" step="1" value="0" inputmode="numeric">
+              <button type="button" class="step-btn" data-step="childrenCredit" data-delta="1" aria-label="9세 이상 자녀 수 늘리기">+</button>
+            </div>
+            <p class="help">2026년 귀속 자녀세액공제는 9세 이상(2016년 이전 출생)부터예요. 2017년생은 아동수당 대상이라 제외됩니다.</p>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>3. 카드·현금 사용액 <span class="legend-note">연간 합계</span></legend>
+
+          <div class="field">
+            <label for="cardCredit">신용카드 <span class="unit">만원</span></label>
+            <div class="input-wrap">
+              <input id="cardCredit" name="cardCredit" type="text" inputmode="numeric" autocomplete="off"
+                     data-unit="man" placeholder="1,500">
+              <span class="suffix">만원</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cardCheck">체크카드·현금영수증 <span class="unit">만원</span></label>
+            <div class="input-wrap">
+              <input id="cardCheck" name="cardCheck" type="text" inputmode="numeric" autocomplete="off"
+                     data-unit="man" placeholder="500">
+              <span class="suffix">만원</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cardMarket">전통시장·대중교통 <span class="unit">만원</span></label>
+            <div class="input-wrap">
+              <input id="cardMarket" name="cardMarket" type="text" inputmode="numeric" autocomplete="off"
+                     data-unit="man" placeholder="0">
+              <span class="suffix">만원</span>
+            </div>
+            <p class="help">총급여의 25%를 넘는 사용액부터 공제돼요. 신용 15% · 체크 30% · 전통시장·대중교통 40%.</p>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>4. 주거·노후</legend>
+
+          <div class="field">
+            <label for="rent">월세 연간 납입액 <span class="unit">만원</span></label>
+            <div class="input-wrap">
+              <input id="rent" name="rent" type="text" inputmode="numeric" autocomplete="off"
+                     data-unit="man" placeholder="600">
+              <span class="suffix">만원</span>
+            </div>
+            <label class="switch-label switch-row compact">
+              <input type="checkbox" id="noHouse" checked>
+              <span class="switch" aria-hidden="true"></span>
+              <span>무주택 세대 (세대주·세대원)</span>
+            </label>
+            <p class="help">총급여 8,000만원 이하 무주택자만 해당. 연 1,000만원까지 17%(5,500만원 이하) 또는 15%.</p>
+          </div>
+
+          <div class="field">
+            <label for="pension">연금저축 + IRP 납입액 <span class="unit">만원</span></label>
+            <div class="input-wrap">
+              <input id="pension" name="pension" type="text" inputmode="numeric" autocomplete="off"
+                     data-unit="man" placeholder="300">
+              <span class="suffix">만원</span>
+            </div>
+            <p class="help">합산 900만원 한도(연금저축 단독 600만원). 총급여 5,500만원 이하 16.5% · 초과 13.2%.</p>
+          </div>
+        </fieldset>
+
+        <p class="form-foot">입력한 값은 서버로 전송되지 않고 브라우저 안에서만 계산됩니다.</p>
+      </form>
+
+      <!-- 결과 -->
+      <aside class="card result-card" id="resultCard" aria-live="polite">
+        <div class="result-empty" id="resultEmpty">
+          <div class="empty-icon" aria-hidden="true">₩</div>
+          <p class="empty-title">총급여를 입력하면<br>예상 환급액이 바로 나와요</p>
+          <p class="empty-sub">금액은 브라우저에서만 계산되며 저장되지 않습니다.</p>
+        </div>
+
+        <div class="result-body" id="resultBody" hidden>
+          <div class="result-banner" id="resultBanner">
+            <p class="result-label" id="resultLabel">예상 환급액</p>
+            <p class="result-amount" id="resultAmount">0원</p>
+            <p class="result-note" id="resultNote"></p>
+          </div>
+
+          <dl class="quick-stats">
+            <div>
+              <dt>결정세액</dt>
+              <dd id="statDecision">0원</dd>
+            </div>
+            <div>
+              <dt>실효세율</dt>
+              <dd id="statRate">0%</dd>
+            </div>
+            <div>
+              <dt>총 소득공제</dt>
+              <dd id="statDeduction">0원</dd>
+            </div>
+          </dl>
+
+          <section class="diagnosis" aria-labelledby="diagTitle">
+            <h3 id="diagTitle">맞춤 절세 진단</h3>
+            <ul id="diagList"></ul>
+          </section>
+
+          <details class="receipt-wrap" open>
+            <summary>단계별 계산 영수증 보기</summary>
+            <table class="receipt" id="receipt">
+              <caption class="sr-only">총급여에서 결정세액까지 계산 과정</caption>
+              <tbody></tbody>
+            </table>
+          </details>
+
+          <p class="result-disclaimer">참고용 추정치입니다. 의료비·교육비·기부금·보장성보험료·주택자금 공제와 부양가족 추가공제는 반영하지 않아 실제 정산 결과와 차이가 있을 수 있어요.</p>
+
+          <a class="guide-link" href="https://niceluckydays.com/entry/2026-연말정산-미리보기-방법-숨은-공제-3가지" target="_blank" rel="noopener">
+            <span class="guide-link-text">더 자세한 숨은 공제 3가지 가이드 보기</span>
+            <span class="guide-link-sub">월세·연금저축·기부금, 12월 31일 전에 챙기는 방법</span>
+          </a>
+        </div>
+      </aside>
+    </div>
+
+    <!-- AdSense 슬롯: 결과 카드 아래 -->
+    <div class="ad-slot ad-slot-inline" data-ad-slot="result-bottom" aria-hidden="true">
+      <span>광고 영역 · AdSense 결과 하단 삽입 위치</span>
+    </div>
+  </section>
+
+  <!-- ===== GUIDE LINK SECTION ===== -->
+  <section id="guide" class="container section">
+    <div class="section-head">
+      <h2>계산은 이렇게 됩니다</h2>
+      <p>총급여에서 세금이 정해지기까지 5단계, 그리고 2026년 귀속에 달라진 기준입니다.</p>
+    </div>
+
+    <ol class="steps">
+      <li>
+        <h3>총급여 → 근로소득금액</h3>
+        <p>누구나 자동으로 받는 근로소득공제를 뺍니다. 총급여 500만원 이하 70%, 1,500만원 이하 40%, 4,500만원 이하 15%, 1억원 이하 5%, 1억원 초과 2%이고 한도는 2,000만원입니다.</p>
+      </li>
+      <li>
+        <h3>소득공제</h3>
+        <p>인적공제(1인당 150만원), 국민연금보험료, 건강·장기요양·고용보험료(근로자 부담분 전액), 신용카드 등 사용액 공제를 차례로 뺍니다. 남은 금액이 과세표준입니다.</p>
+      </li>
+      <li>
+        <h3>산출세액</h3>
+        <p>과세표준에 6%~45% 8단계 누진세율을 적용합니다. 1,400만원까지 6%, 5,000만원까지 15%, 8,800만원까지 24%, 1억5천만원까지 35%, 3억원까지 38%, 5억원까지 40%, 10억원까지 42%, 초과 45%입니다.</p>
+      </li>
+      <li>
+        <h3>세액공제</h3>
+        <p>근로소득세액공제(산출세액의 55%, 총급여별 한도 74만~20만원), 자녀세액공제, 연금계좌 세액공제, 월세 세액공제를 산출세액에서 직접 뺍니다.</p>
+      </li>
+      <li>
+        <h3>결정세액 → 환급</h3>
+        <p>1년 동안 급여에서 미리 낸 세금(기납부세액)보다 결정세액이 적으면 차액이 환급되고, 많으면 2월 급여에서 더 냅니다. 지방소득세는 소득세의 10%로 함께 정산됩니다.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===== 2026 CHANGES ===== -->
+  <section class="container section section-tint">
+    <div class="section-head">
+      <h2>2026년 귀속, 작년과 달라진 것</h2>
+      <p>2027년 1~2월 정산에서 처음 적용되는 기준만 골랐습니다.</p>
+    </div>
+
+    <div class="info-grid">
+      <article class="info-card">
+        <span class="info-tag">카드</span>
+        <h3>자녀가 있으면 카드 공제 한도가 늘어요</h3>
+        <p>기본공제 대상 자녀가 1명이면 350만원, 2명 이상이면 400만원까지(총급여 7,000만원 이하 기준). 7,000만원 초과는 275만원·300만원입니다. 2028년 귀속분까지 3년간 적용됩니다.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-tag">자녀</span>
+        <h3>자녀세액공제는 9세 이상부터</h3>
+        <p>아동수당 대상이 13세 미만으로 넓어지면서 공제 나이도 한 살 올라갔습니다. 2026년 귀속은 9세 이상(2016년 이전 출생)이고 2017년생은 제외됩니다. 금액은 1명 25만원, 2명 55만원, 3명 95만원입니다.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-tag">월세</span>
+        <h3>주말부부도 각자 월세 공제</h3>
+        <p>세대주가 공제를 받아도 다른 시·군·구에 사는 배우자가 요건을 갖추면 따로 공제받을 수 있습니다. 단 부부 합산 1,000만원 한도는 그대로입니다.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-tag">4대보험</span>
+        <h3>국민연금·건강보험료율 인상</h3>
+        <p>2026년 근로자 부담은 국민연금 4.75%, 건강보험 3.595%, 장기요양(건강보험료의 13.14%), 고용보험 0.9%입니다. 보험료가 늘면 소득공제도 함께 늘어납니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== DEDUCTION TABLE ===== -->
+  <section class="container section">
+    <div class="section-head">
+      <h2>헷갈리는 공제, 숫자로 정리</h2>
+      <p>2026년 귀속 기준 한도와 공제율입니다.</p>
+    </div>
+
+    <div class="table-scroll">
+      <table class="data-table">
+        <thead>
+          <tr><th scope="col">항목</th><th scope="col">대상</th><th scope="col">한도</th><th scope="col">공제율</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>신용카드 등 소득공제</td><td>총급여의 25% 초과 사용분</td><td>기본 300만원(자녀 1명 350·2명 이상 400) + 추가 300만원</td><td>신용 15% · 체크·현금 30% · 전통시장·대중교통 40%</td></tr>
+          <tr><td>월세 세액공제</td><td>총급여 8,000만원 이하 무주택 세대</td><td>연 1,000만원</td><td>5,500만원 이하 17% · 초과 15%</td></tr>
+          <tr><td>연금저축·IRP 세액공제</td><td>연금계좌 납입자</td><td>합산 900만원(연금저축 600만원)</td><td>5,500만원 이하 16.5% · 초과 13.2%</td></tr>
+          <tr><td>자녀세액공제</td><td>9세 이상 기본공제 대상 자녀</td><td>1명 25만 · 2명 55만 · 3명 95만원</td><td>정액</td></tr>
+          <tr><td>근로소득세액공제</td><td>근로소득자 전원</td><td>총급여별 74만·66만·50만·20만원</td><td>산출세액 130만원 이하 55% · 초과분 30%</td></tr>
+          <tr><td>인적공제</td><td>본인과 부양가족</td><td>1인당 150만원</td><td>소득공제</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-hint">표는 좌우로 넘겨서 볼 수 있어요.</p>
+  </section>
+
+  <!-- ===== CHECKLIST ===== -->
+  <section class="container section section-tint">
+    <div class="section-head">
+      <h2>12월 31일 전, 5분 체크리스트</h2>
+      <p>해가 바뀌면 되돌릴 수 없는 것들부터.</p>
+    </div>
+    <ul class="checklist">
+      <li><strong>연금저축·IRP</strong> 남은 한도 확인 후 12월 31일까지 납입 (합산 900만원)</li>
+      <li><strong>월세</strong> 계좌이체 내역·임대차계약서·주민등록등본 3종 준비</li>
+      <li><strong>카드</strong> 총급여 25%를 이미 넘겼다면 남은 지출은 체크카드·전통시장으로</li>
+      <li><strong>의료비·교육비</strong> 1월 중순 간소화 서비스에서 누락 항목 확인</li>
+      <li><strong>부양가족</strong> 부모님·자녀 기본공제 요건(나이·소득 100만원 이하) 점검</li>
+    </ul>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="container section">
+    <div class="section-head">
+      <h2>자주 묻는 질문</h2>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>2026년 귀속 연말정산은 언제 하나요?</summary>
+        <p>2026년 1월 1일부터 12월 31일까지 번 소득과 쓴 돈을 기준으로 2027년 1~2월에 회사에서 정산합니다. 근로자는 2027년 1월 중순부터 열리는 국세청 연말정산 간소화 서비스에서 자료를 확인해 회사에 제출하고, 결과는 보통 2월 급여에 반영됩니다.</p>
+      </details>
+      <details>
+        <summary>환급금은 언제, 어떻게 받나요?</summary>
+        <p>회사가 2027년 3월 10일까지 지급명세서를 제출하고 그 전후로 2월 급여나 3월 초에 환급액이 지급됩니다. 회사 정산을 놓쳤다면 5월 종합소득세 신고로 직접 돌려받을 수 있습니다. 추가 납부도 같은 시점에 정산됩니다.</p>
+      </details>
+      <details>
+        <summary>계산기 결과와 실제 환급액이 다른 이유는 무엇인가요?</summary>
+        <p>이 계산기는 총급여, 부양가족, 4대보험료, 카드 사용액, 월세, 연금저축·IRP, 자녀 수만 반영합니다. 의료비·교육비·기부금·보장성보험료·주택자금(전세대출 이자 등), 부양가족 추가공제(65세 이상·장애인), 중소기업 취업자 감면, ISA 만기 전환 추가공제는 빠져 있어 실제와 차이가 날 수 있습니다. 정확한 금액은 홈택스 연말정산 미리보기와 회사 정산 결과로 확인하세요.</p>
+      </details>
+      <details>
+        <summary>12월 31일 전에 해야 환급이 커지는 공제는 무엇인가요?</summary>
+        <p>연금저축·IRP 납입(합산 900만원), 월세 세액공제(연 1,000만원), 고향사랑기부금입니다. 세 가지 모두 그해에 납입·지출해야 2026년 귀속으로 인정되고, 해가 바뀌면 되돌릴 수 없습니다.</p>
+      </details>
+      <details>
+        <summary>신용카드 25% 규칙은 무슨 뜻인가요?</summary>
+        <p>카드·현금영수증·전통시장·대중교통 사용액 합계가 총급여의 25%를 넘어야 그 초과분부터 소득공제가 시작됩니다. 총급여 4,500만원이면 1,125만원을 넘게 쓴 부분만 대상입니다. 최저사용금액은 신용카드 사용분에서 먼저 채워지므로, 25%를 넘긴 지출은 체크카드(30%)나 전통시장·대중교통(40%)으로 쓰는 편이 유리합니다.</p>
+      </details>
+      <details>
+        <summary>2026년 귀속 자녀세액공제는 얼마인가요?</summary>
+        <p>기본공제 대상 자녀 중 9세 이상(2016년 이전 출생)에 대해 1명 25만원, 2명 55만원, 3명 이상은 55만원에 2명을 넘는 1명당 40만원을 더합니다(3명 95만원). 2017년생은 아동수당 대상이라 2026년에는 제외되고, 자녀 기본공제 1인당 150만원은 별도로 받습니다.</p>
+      </details>
+      <details>
+        <summary>맞벌이 부부는 어떻게 입력해야 하나요?</summary>
+        <p>각자 자기 급여와 자기 이름으로 기본공제를 받는 가족만 넣으면 됩니다. 자녀 2명을 부부가 1명씩 나눠 공제받으면 각자 '자녀 1명' 기준으로 카드 한도와 자녀세액공제가 계산됩니다. 월세는 부부 합산 1,000만원 한도입니다.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="container">
+    <p class="page-disclaimer">
+      <strong>안내.</strong> 이 계산기는 2026년 11월 기준 공포·시행된 법령(소득세법·조세특례제한법)과 국세청 안내를 바탕으로 만든 참고용 도구입니다. 세무·법률 자문이 아니며, 실제 환급·납부액은 회사 연말정산과 국세청 홈택스 결과가 기준입니다. 2026년 8월 정부 세제개편안과 12월 국회 의결 내용은 아직 반영하지 않았습니다.
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark small" aria-hidden="true">₩</span>
+      <div>
+        <p class="footer-title">스마트 라이프 툴즈</p>
+        <p class="footer-desc">돈과 생활에 바로 쓰는 계산기</p>
+      </div>
+    </div>
+    <nav class="footer-nav" aria-label="바닥글 메뉴">
+      <a href="index.html">연말정산 계산기</a>
+      <a href="about.html">사이트 소개</a>
+      <a href="privacy.html">개인정보처리방침</a>
+      <a href="mailto:a284322@gmail.com">문의 a284322@gmail.com</a>
+    </nav>
+    <p class="copyright">© 2026 스마트 라이프 툴즈. 계산 결과는 참고용이며 세무 자문이 아닙니다.</p>
+  </div>
+</footer>
+
+<div class="mobile-bar" id="mobileBar" hidden>
+  <div>
+    <span class="mb-label" id="mbLabel">예상 환급액</span>
+    <strong class="mb-amount" id="mbAmount">0원</strong>
+  </div>
+  <a href="#resultCard" class="mb-link">영수증 보기</a>
+</div>
+
+<script src="app.js" defer></script>
+</body>
+</html>
