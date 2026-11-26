@@ -6,14 +6,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>mobile preview (temp)</title>
 <style>
-  html, body { margin: 0; padding: 0; background: #e2e8f0; }
-  .frame { width: 390px; margin: 0 auto; background: #fff; }
-  iframe { display: block; width: 390px; height: 3800px; border: 0; }
+  html, body { margin: 0; padding: 0; background: #e2e8f0; overflow: hidden; }
+  .frame { position: relative; width: 390px; height: 993px; margin: 0 auto; overflow: hidden; background: #fff; }
+  .frame iframe { position: absolute; left: 0; display: block; width: 390px; height: 4200px; border: 0; }
 </style>
 </head>
 <body>
 <div class="frame">
   <iframe id="m390" src="calculator.html?ads=off" title="생활계산기 모바일 미리보기"></iframe>
 </div>
+<script>
+  function applyOffset() {
+    var y = parseInt((location.hash || '#0').replace('#', ''), 10) || 0;
+    document.getElementById('m390').style.top = (-y) + 'px';
+  }
+  window.addEventListener('hashchange', applyOffset);
+  applyOffset();
+</script>
 </body>
 </html>
