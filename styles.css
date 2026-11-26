@@ -1155,6 +1155,12 @@ label.switch-label.switch-row .switch { margin-top: 2px; }
 .brand-text { white-space: nowrap; }
 .site-nav a { white-space: nowrap; }
 
+/* 모바일에서는 현재 페이지 + 신년운세만 남겨 폭을 지킨다 */
+@media (max-width: 640px) {
+  .site-nav a[data-nav="about"]:not(.is-active),
+  .site-nav a[data-nav="privacy"]:not(.is-active) { display: none; }
+}
+
 #calc, #guide, #faq, .section { scroll-margin-top: 78px; }
 
 @media (max-width: 640px) {
@@ -1162,8 +1168,7 @@ label.switch-label.switch-row .switch { margin-top: 2px; }
   .brand-text { font-size: 14.5px; }
   .site-nav { gap: 14px; font-size: 13.5px; }
   .site-nav a:first-child { display: none; }
-  .site-nav a.is-active:first-child { display: none; }
-  .hero { padding: 36px 0 28px; }
+  .site-nav a.is-active:first-child { display: none; }  .hero { padding: 36px 0 28px; }
   .hero-badges { gap: 6px; }
   .hero-badges li { font-size: 11.5px; padding: 6px 10px; }
   .section { padding: 44px 0; }
