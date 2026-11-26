@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>생활계산기 – 월급 실수령액·대출이자·퇴직금 계산기 (2026년 요율) | 스마트 라이프 툴즈</title>
+<meta name="description" content="2026년 4대보험 요율을 반영한 월급 실수령액 계산기, 원리금균등·원금균등·만기일시 상환방식별 대출이자 계산기, 1일 평균임금으로 계산하는 퇴직금 계산기를 한 페이지에서 무료로 사용하세요. 공제 내역과 연봉별 실수령액표까지 한 번에 확인할 수 있습니다.">
+<meta name="keywords" content="월급 실수령액 계산기, 2026 연봉 실수령액표, 연봉 실수령액 계산, 대출이자 계산기, 원리금균등 계산, 원금균등 계산, 만기일시상환 이자, 퇴직금 계산기, 평균임금 계산, 4대보험 요율 2026, 국민연금 4.75%, 건강보험료 3.545%">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="스마트 라이프 툴즈">
+<meta name="theme-color" content="#2563eb">
+<link rel="canonical" href="https://tools.niceluckydays.com/calculator.html">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="스마트 라이프 툴즈">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="생활계산기 – 월급 실수령액·대출이자·퇴직금 계산기">
+<meta property="og:description" content="연봉만 넣으면 2026년 4대보험·소득세를 뺀 월 실수령액이 바로 나옵니다. 대출이자와 퇴직금까지 한 페이지에서 계산하고, 연봉별 실수령액표로 비교해 보세요.">
+<meta property="og:url" content="https://tools.niceluckydays.com/calculator.html">
+<meta property="og:image" content="https://tools.niceluckydays.com/assets/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="생활계산기 – 월급 실수령액·대출이자·퇴직금 계산기">
+<meta name="twitter:description" content="2026년 요율 기준 월 실수령액, 대출이자, 퇴직금을 30초에 계산하세요.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232563eb'/%3E%3Ctext x='32' y='44' font-size='34' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3E%E2%82%A9%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="calculator.css">
+
+<meta name="naver-site-verification" content="15ac2f25795a5444a1af3225a831af4b8e3e77b3" />
+
+<!-- Google AdSense (자동 광고 + 디스플레이 광고 단위) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7905972440351261" crossorigin="anonymous"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://tools.niceluckydays.com/#website",
+      "url": "https://tools.niceluckydays.com/",
+      "name": "스마트 라이프 툴즈",
+      "inLanguage": "ko-KR",
+      "description": "돈과 생활에 바로 쓰는 무료 계산기 모음. 연말정산 환급금 계산기, 2027 신년운세, 생활 계산기를 제공합니다."
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://tools.niceluckydays.com/calculator.html#app",
+      "name": "생활계산기 – 월급 실수령액·대출이자·퇴직금 계산기",
+      "url": "https://tools.niceluckydays.com/calculator.html",
+      "applicationCategory": "FinanceApplication",
+      "applicationSubCategory": "CalculatorApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "ko-KR",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+      "featureList": [
+        "2026년 4대보험 요율을 반영한 월급 실수령액 계산",
+        "비과세액·부양가족 수를 반영한 소득세·지방소득세 추정",
+        "원리금균등·원금균등·만기일시 상환방식별 대출이자 계산",
+        "1일 평균임금 기반 퇴직금 계산"
+      ],
+      "description": "연봉 또는 월급과 비과세액, 부양가족 수를 넣으면 2026년 4대보험료와 소득세를 뺀 월 실수령액을 계산합니다. 대출금액·금리·기간·상환방식으로 총 이자를, 입사일·퇴사일·최근 3개월 급여로 예상 퇴직금을 계산하는 무료 웹 계산기입니다."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tools.niceluckydays.com/calculator.html#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "스마트 라이프 툴즈", "item": "https://tools.niceluckydays.com/" },
+        { "@type": "ListItem", "position": 2, "name": "생활계산기", "item": "https://tools.niceluckydays.com/calculator.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tools.niceluckydays.com/calculator.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "월급 실수령액은 어떻게 계산하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "세전 월급에서 근로자 부담 4대보험료(국민연금 4.75%, 건강보험 3.545%, 장기요양보험은 건강보험료의 12.95%, 고용보험 0.9%)와 소득세·지방소득세를 뺀 금액입니다. 소득세는 연간 급여를 기준으로 근로소득공제·인적공제·4대보험료 소득공제·근로소득세액공제를 반영해 계산한 뒤 12로 나누고, 지방소득세는 소득세의 10%를 더합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2026년 4대보험 요율은 얼마인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2026년 근로자 부담분은 국민연금 4.75%, 건강보험 3.545%, 장기요양보험 12.95%(건강보험료 대비), 고용보험 0.9%입니다. 국민연금은 기준소득월액 상한(월 659만원)과 하한(월 41만원)이 적용되고, 건강보험·장기요양·고용보험은 비과세를 뺀 과세 급여 전체에 부과됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "계산한 실수령액과 통장에 들어온 금액이 다른 이유는 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "회사는 국세청 간이세액표로 매달 원천징수하기 때문에, 이 계산기처럼 연간 소득으로 정산한 금액과 월별로 조금씩 차이가 납니다. 또 상여금·연장근로수당·직책수당, 식대·차량유지비 등 비과세 항목, 부양가족과 자녀 수, 학자금·보육수당 같은 회사별 항목에 따라 달라집니다. 정확한 금액은 급여명세서와 연말정산 결과로 확인하세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "원리금균등분할상환과 원금균등분할상환은 무엇이 다른가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "원리금균등은 매달 내는 돈(원금+이자)이 같아서 가계 계획을 세우기 쉽고, 초반에는 이자 비중이 큽니다. 원금균등은 매달 갚는 원금이 같아 납입액이 점점 줄어들고, 같은 금리·기간이면 총 이자가 더 적습니다. 만기일시상환은 만기까지 이자만 내다가 만기에 원금을 한꺼번에 갚는 방식으로, 월 부담은 가장 적지만 총 이자는 가장 많습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "퇴직금은 어떻게 계산하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "퇴직금 = 1일 평균임금 × 30일 × (재직일수 ÷ 365)입니다. 1일 평균임금은 퇴직 직전 3개월에 받은 임금 총액을 그 3개월의 역일수로 나눈 금액이고, 여기에는 기본급·수당과 함께 연간 상여금과 연차수당의 3/12이 포함됩니다. 1년 이상 계속 근무한 근로자에게 법정 퇴직금이 발생합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "퇴직금에 세금은 얼마나 떼나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "퇴직금은 근속연수와 환산급여에 따라 퇴직소득세와 지방소득세(퇴직소득세의 10%)가 부과되며, 근속연수가 길수록 공제가 커져 실효세율이 낮아집니다. 퇴직금을 IRP(개인형 퇴직연금) 계좌로 받으면 세금을 바로 떼지 않고 과세이연할 수 있습니다. 이 계산기는 세전 퇴직금만 보여주며 세금은 반영하지 않습니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#calc">계산기로 바로 가기</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="스마트 라이프 툴즈 홈">
+      <span class="brand-mark" aria-hidden="true">₩</span>
+      <span class="brand-text">스마트 라이프 툴즈</span>
+    </a>
+    <nav class="site-nav" aria-label="주요 메뉴">
+      <a href="index.html" data-nav="calc">연말정산<span class="nav-long"> 계산기</span></a>
+      <a href="calculator.html" class="is-active" data-nav="life" aria-current="page">생활계산기</a>
+      <a href="fortune.html" data-nav="fortune"><span class="nav-long">2027 </span>신년운세</a>
+      <a href="#rates" data-nav="how">계산 기준</a>
+      <a href="#faq" data-nav="faq">자주 묻는 질문</a>
+      <a href="about.html" data-nav="about">사이트 소개</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">2026년 요율 기준 · 회원가입 없이 바로 계산</p>
+      <h1>생활계산기<br class="br-mobile"> 월급 실수령액·대출이자·퇴직금</h1>
+      <p class="hero-sub">연봉만 넣으면 <strong>월 실수령액</strong>이 바로 나옵니다.<br class="br-desktop"> 대출이자와 퇴직금까지, 공제 내역을 표로 하나씩 보여드려요.</p>
+      <ul class="hero-badges">
+        <li>2026년 4대보험 요율 반영</li>
+        <li>입력값 서버 전송 없음</li>
+        <li>모바일에서도 30초</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AdSense 광고: 상단 배너 (도구 위) -->
+  <div class="container">
+    <div class="ad-slot" data-ad-slot="top">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7905972440351261"
+           data-ad-slot="6595337008"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </div>
+
+  <!-- ===== CALCULATOR ===== -->
+  <section id="calc" class="calc-section container" aria-labelledby="calcTitle">
+    <h2 id="calcTitle" class="sr-only">생활계산기 – 월급 실수령액, 대출이자, 퇴직금 계산기</h2>
+
+    <div class="tabbar" role="tablist" aria-label="계산기 종류 선택">
+      <button type="button" class="tab-btn is-active" role="tab" id="tabPay" aria-selected="true" aria-controls="panelPay" data-tab="pay">월급 실수령액<small>연봉 → 통장 입금액</small></button>
+      <button type="button" class="tab-btn" role="tab" id="tabLoan" aria-selected="false" aria-controls="panelLoan" data-tab="loan" tabindex="-1">대출이자<small>총 이자·월 상환금</small></button>
+      <button type="button" class="tab-btn" role="tab" id="tabSeverance" aria-selected="false" aria-controls="panelSeverance" data-tab="severance" tabindex="-1">퇴직금<small>평균임금 → 퇴직금</small></button>
+    </div>
+
+    <!-- ============ 패널 1. 월급 실수령액 ============ -->
+    <div class="tab-panel" role="tabpanel" id="panelPay" data-panel="pay" aria-labelledby="tabPay">
+      <p class="panel-intro">예시 값이 채워져 있어요. <strong>내 연봉</strong>으로 바꾸면 바로 다시 계산됩니다. 2026년 4대보험 요율과 소득세를 함께 반영합니다.</p>
+
+      <div class="calc-grid">
+        <form class="card form-card" id="payForm" novalidate>
+          <div class="card-head">
+            <h3>급여 정보 입력</h3>
+          </div>
+
+          <fieldset class="field-group">
+            <legend>1. 급여</legend>
+
+            <div class="field">
+              <label for="paySalary">급여액 <span class="unit">세전 · 만원</span></label>
+              <div class="input-wrap">
+                <input id="paySalary" name="paySalary" type="text" inputmode="numeric" autocomplete="off"
+                       data-unit="man" placeholder="4,500" value="4,500" aria-describedby="paySalaryHelp">
+                <span class="suffix">만원</span>
+              </div>
+              <div class="chips" role="group" aria-label="연봉 빠른 선택">
+                <button type="button" class="chip" data-salary="3000">3,000만</button>
+                <button type="button" class="chip" data-salary="4000">4,000만</button>
+                <button type="button" class="chip" data-salary="4500">4,500만</button>
+                <button type="button" class="chip" data-salary="5000">5,000만</button>
+                <button type="button" class="chip" data-salary="6000">6,000만</button>
+                <button type="button" class="chip" data-salary="10000">1억</button>
+              </div>
+              <p class="help" id="paySalaryHelp">세전 연봉(또는 월급)입니다. 원천징수영수증의 '총급여'가 아니라 계약 연봉을 넣으면 됩니다.</p>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="payUnit">입력 기준</label>
+                <div class="select-wrap">
+                  <select id="payUnit" name="payUnit">
+                    <option value="year" selected>연봉 (1년)</option>
+                    <option value="month">월급 (1개월)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="payNonTaxable">월 비과세액 <span class="unit">만원</span></label>
+                <div class="input-wrap">
+                  <input id="payNonTaxable" name="payNonTaxable" type="text" inputmode="numeric" autocomplete="off"
+                         data-unit="man" placeholder="20" value="20">
+                  <span class="suffix">만원</span>
+                </div>
+              </div>
+            </div>
+            <p class="help">식대 비과세 한도는 월 20만원입니다. 차량유지비·육아수당 등 회사가 비과세로 처리한 금액이 있으면 더해 주세요.</p>
+          </fieldset>
+
+          <fieldset class="field-group">
+            <legend>2. 가족</legend>
+            <div class="field">
+              <label for="payFamily">부양가족 수 <span class="unit">본인 포함</span></label>
+              <div class="stepper">
+                <button type="button" class="step-btn" data-step="payFamily" data-delta="-1" aria-label="부양가족 수 줄이기">−</button>
+                <input id="payFamily" name="payFamily" type="number" min="1" max="10" step="1" value="1" inputmode="numeric">
+                <button type="button" class="step-btn" data-step="payFamily" data-delta="1" aria-label="부양가족 수 늘리기">+</button>
+              </div>
+              <p class="help">기본공제 1인당 150만원. 배우자·자녀·부모님 중 소득 요건을 충족하는 사람을 포함해 넣으세요.</p>
+            </div>
+          </fieldset>
+
+          <button type="button" class="calc-btn" data-calc="pay">실수령액 계산하기</button>
+          <p class="form-foot">입력한 값은 서버로 전송되지 않고 브라우저 안에서만 계산됩니다.</p>
+        </form>
+
+        <aside class="card result-card" id="payResult" aria-live="polite">
+          <div class="result-empty" id="payEmpty" hidden>
+            <div class="empty-icon" aria-hidden="true">₩</div>
+            <p class="empty-title">급여액을 입력하면<br>월 실수령액이 바로 나와요</p>
+            <p class="empty-sub">금액은 브라우저에서만 계산되며 저장되지 않습니다.</p>
+          </div>
+
+          <div class="result-body" id="payBody">
+            <div class="result-banner">
+              <p class="result-label">월 예상 실수령액</p>
+              <p class="result-amount" id="payNet">0원</p>
+              <p class="result-note" id="payNote"></p>
+            </div>
+
+            <dl class="quick-stats">
+              <div>
+                <dt>월 공제 합계</dt>
+                <dd id="payDeduct">0원</dd>
+              </div>
+              <div>
+                <dt>공제율</dt>
+                <dd id="payRate">0%</dd>
+              </div>
+              <div>
+                <dt>연 실수령액</dt>
+                <dd id="payAnnual">0원</dd>
+              </div>
+            </dl>
+
+            <details class="receipt-wrap" open>
+              <summary>공제 내역 자세히 보기</summary>
+              <table class="receipt" id="payReceiptTable">
+                <caption class="sr-only">월 급여에서 4대보험료와 세금을 뺀 실수령액 계산 과정</caption>
+                <tbody id="payReceipt"></tbody>
+              </table>
+            </details>
+
+            <p class="tax-note" id="payTaxNote"></p>
+            <p class="result-disclaimer">참고용 추정치입니다. 실제 원천징수는 국세청 간이세액표와 회사 급여 기준에 따라 달라질 수 있고, 상여금·수당·특별공제(의료비·보험료 등)는 반영하지 않았습니다.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- ============ 패널 2. 대출이자 ============ -->
+    <div class="tab-panel" role="tabpanel" id="panelLoan" data-panel="loan" aria-labelledby="tabLoan" hidden>
+      <p class="panel-intro">대출금액과 금리, 기간, <strong>상환방식</strong>을 고르면 총 이자와 월 상환금이 나옵니다. 같은 조건이라도 상환방식에 따라 총 이자가 달라집니다.</p>
+
+      <div class="calc-grid">
+        <form class="card form-card" id="loanForm" novalidate>
+          <div class="card-head">
+            <h3>대출 조건 입력</h3>
+          </div>
+
+          <fieldset class="field-group">
+            <legend>1. 대출 금액과 금리</legend>
+
+            <div class="field">
+              <label for="loanAmount">대출금액 <span class="unit">만원</span></label>
+              <div class="input-wrap">
+                <input id="loanAmount" name="loanAmount" type="text" inputmode="numeric" autocomplete="off"
+                       data-unit="man" placeholder="30,000" value="30,000">
+                <span class="suffix">만원</span>
+              </div>
+              <p class="help">예: 3억 원이면 30,000을 입력하세요.</p>
+            </div>
+
+            <div class="field">
+              <label for="loanRate">연 이자율 <span class="unit">%</span></label>
+              <div class="input-wrap">
+                <input id="loanRate" name="loanRate" type="text" inputmode="decimal" autocomplete="off"
+                       placeholder="4.5" value="4.5">
+                <span class="suffix">%</span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="field-group">
+            <legend>2. 기간과 상환방식</legend>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="loanTerm">대출기간</label>
+                <div class="input-wrap">
+                  <input id="loanTerm" name="loanTerm" type="text" inputmode="decimal" autocomplete="off"
+                         placeholder="20" value="20">
+                  <span class="suffix">기간</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="loanTermUnit">기간 단위</label>
+                <div class="select-wrap">
+                  <select id="loanTermUnit" name="loanTermUnit">
+                    <option value="year" selected>년</option>
+                    <option value="month">개월</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="loanMethod">상환방식</label>
+              <div class="select-wrap">
+                <select id="loanMethod" name="loanMethod">
+                  <option value="equal-payment" selected>원리금균등분할상환 (매달 같은 금액)</option>
+                  <option value="equal-principal">원금균등분할상환 (납입액이 점점 감소)</option>
+                  <option value="bullet">만기일시상환 (이자만 내다 만기 상환)</option>
+                </select>
+              </div>
+              <p class="help">주택담보대출은 보통 원리금균등, 신용대출은 만기일시나 원금균등을 많이 씁니다.</p>
+            </div>
+          </fieldset>
+
+          <button type="button" class="calc-btn" data-calc="loan">대출이자 계산하기</button>
+          <p class="form-foot">중도상환수수료, 인지세, 근저당 설정비용은 반영하지 않습니다.</p>
+        </form>
+
+        <aside class="card result-card" id="loanResult" aria-live="polite">
+          <div class="result-empty" id="loanEmpty" hidden>
+            <div class="empty-icon" aria-hidden="true">%</div>
+            <p class="empty-title">대출금액과 기간을 입력하면<br>총 이자가 바로 나와요</p>
+            <p class="empty-sub">금액은 브라우저에서만 계산되며 저장되지 않습니다.</p>
+          </div>
+
+          <div class="result-body" id="loanBody">
+            <div class="result-banner">
+              <p class="result-label" id="loanLabel">월 평균 납입금</p>
+              <p class="result-amount" id="loanMain">0원</p>
+              <p class="result-note" id="loanNote"></p>
+            </div>
+
+            <dl class="quick-stats">
+              <div>
+                <dt>첫 달 상환금</dt>
+                <dd id="loanFirst">0원</dd>
+              </div>
+              <div>
+                <dt>총 대출이자</dt>
+                <dd id="loanInterest">0원</dd>
+              </div>
+              <div>
+                <dt>총 상환금액</dt>
+                <dd id="loanTotal">0원</dd>
+              </div>
+            </dl>
+
+            <details class="receipt-wrap" open>
+              <summary>대출 조건과 합계 보기</summary>
+              <table class="receipt" id="loanReceiptTable">
+                <caption class="sr-only">대출 조건과 총 상환금액 계산 내역</caption>
+                <tbody id="loanReceipt"></tbody>
+              </table>
+            </details>
+
+            <details class="schedule-wrap" id="loanScheduleWrap" open>
+              <summary>연차별 상환 스케줄</summary>
+              <div class="schedule-scroll">
+                <table class="schedule-table">
+                  <caption class="sr-only">연차별 납입액, 이자, 남은 원금</caption>
+                  <thead>
+                    <tr><th scope="col">구분</th><th scope="col">연간 납입</th><th scope="col">이자</th><th scope="col">남은 원금</th></tr>
+                  </thead>
+                  <tbody id="loanSchedule"></tbody>
+                </table>
+              </div>
+              <p class="schedule-hint" id="loanScheduleHint">단위: 원</p>
+            </details>
+
+            <p class="result-disclaimer">참고용 추정치입니다. 은행별 우대금리, 거치기간, 중도상환수수료, 인지세 등은 반영하지 않았습니다.</p>
+            <a class="guide-link" href="https://niceluckydays.com/" target="_blank" rel="noopener">
+              <span class="guide-link-text">돈 관리에 도움 되는 글 더 보기</span>
+              <span class="guide-link-sub">나이스럭키데이즈 – 연말정산·자동차세·생활비 절약</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- ============ 패널 3. 퇴직금 ============ -->
+    <div class="tab-panel" role="tabpanel" id="panelSeverance" data-panel="severance" aria-labelledby="tabSeverance" hidden>
+      <p class="panel-intro">입사일과 퇴사일, <strong>최근 3개월 급여</strong>를 넣으면 1일 평균임금과 예상 퇴직금(세전)이 나옵니다. 상여금·연차수당은 연간 금액의 3/12이 자동 반영됩니다.</p>
+
+      <div class="calc-grid">
+        <form class="card form-card" id="sevForm" novalidate>
+          <div class="card-head">
+            <h3>근무 기간과 급여 입력</h3>
+          </div>
+
+          <fieldset class="field-group">
+            <legend>1. 근무 기간</legend>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="sevHire">입사일</label>
+                <div class="input-wrap">
+                  <input id="sevHire" name="sevHire" type="date" value="2019-03-01">
+                </div>
+              </div>
+              <div class="field">
+                <label for="sevQuit">퇴사일</label>
+                <div class="input-wrap">
+                  <input id="sevQuit" name="sevQuit" type="date">
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="switch-label switch-row compact">
+                <input type="checkbox" id="sevManual">
+                <span class="switch" aria-hidden="true"></span>
+                <span>재직일수를 직접 입력할게요</span>
+              </label>
+              <div class="field" id="sevDaysField" hidden>
+                <label for="sevDays">재직일수 <span class="unit">일</span></label>
+                <div class="input-wrap">
+                  <input id="sevDays" name="sevDays" type="text" inputmode="numeric" autocomplete="off" placeholder="2,800">
+                  <span class="suffix">일</span>
+                </div>
+              </div>
+              <p class="help">퇴사일은 마지막 근무일 기준으로 넣으세요. 입사일과 퇴사일을 모두 포함해 재직일수를 계산합니다.</p>
+            </div>
+          </fieldset>
+
+          <fieldset class="field-group">
+            <legend>2. 최근 3개월 급여 <span class="legend-note">세전</span></legend>
+
+            <div class="field">
+              <label for="sevSalary3m">최근 3개월 급여 합계 <span class="unit">만원</span></label>
+              <div class="input-wrap">
+                <input id="sevSalary3m" name="sevSalary3m" type="text" inputmode="numeric" autocomplete="off"
+                       data-unit="man" placeholder="900" value="900">
+                <span class="suffix">만원</span>
+              </div>
+              <p class="help">기본급과 각종 수당을 포함한 3개월치 세전 급여 총액입니다. 월 300만원이면 900을 넣으세요.</p>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="sevBonus">연간 상여금 <span class="unit">만원</span></label>
+                <div class="input-wrap">
+                  <input id="sevBonus" name="sevBonus" type="text" inputmode="numeric" autocomplete="off"
+                         data-unit="man" placeholder="600" value="600">
+                  <span class="suffix">만원</span>
+                </div>
+              </div>
+              <div class="field">
+                <label for="sevLeave">연간 연차수당 <span class="unit">만원</span></label>
+                <div class="input-wrap">
+                  <input id="sevLeave" name="sevLeave" type="text" inputmode="numeric" autocomplete="off"
+                         data-unit="man" placeholder="120" value="120">
+                  <span class="suffix">만원</span>
+                </div>
+              </div>
+            </div>
+            <p class="help">연간 상여금·연차수당은 3/12(3개월분)만 평균임금에 반영됩니다. 없으면 0을 입력하세요.</p>
+          </fieldset>
+
+          <button type="button" class="calc-btn" data-calc="severance">퇴직금 계산하기</button>
+          <p class="form-foot">세전 퇴직금입니다. 퇴직소득세와 지방소득세는 포함하지 않았습니다.</p>
+        </form>
+
+        <aside class="card result-card" id="sevResult" aria-live="polite">
+          <div class="result-empty" id="sevEmpty" hidden>
+            <div class="empty-icon" aria-hidden="true">퇴</div>
+            <p class="empty-title">근무 기간과 급여를 입력하면<br>예상 퇴직금이 나와요</p>
+            <p class="empty-sub">금액은 브라우저에서만 계산되며 저장되지 않습니다.</p>
+          </div>
+
+          <div class="result-body" id="sevBody">
+            <div class="result-banner">
+              <p class="result-label">예상 퇴직금 (세전)</p>
+              <p class="result-amount" id="sevMain">0원</p>
+              <p class="result-note" id="sevNote"></p>
+            </div>
+
+            <dl class="quick-stats">
+              <div>
+                <dt>1일 평균임금</dt>
+                <dd id="sevDaily">0원</dd>
+              </div>
+              <div>
+                <dt>재직일수</dt>
+                <dd id="sevDays2">0일</dd>
+              </div>
+              <div>
+                <dt>재직기간</dt>
+                <dd id="sevPeriod">-</dd>
+              </div>
+            </dl>
+
+            <p class="notice-warn" id="sevWarn" hidden></p>
+
+            <details class="receipt-wrap" open>
+              <summary>평균임금 계산 과정 보기</summary>
+              <table class="receipt" id="sevReceiptTable">
+                <caption class="sr-only">최근 3개월 임금에서 퇴직금까지 계산 과정</caption>
+                <tbody id="sevReceipt"></tbody>
+              </table>
+            </details>
+
+            <p class="result-disclaimer">참고용 추정치입니다. 통상임금이 평균임금보다 높으면 통상임금으로 계산하고, 연차수당·상여금 지급 기준과 3개월 역일수는 회사 규정에 따라 달라질 수 있습니다.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- AdSense 광고: 결과 카드 아래 -->
+    <div class="ad-slot ad-slot-inline" data-ad-slot="result-bottom">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7905972440351261"
+           data-ad-slot="2808135239"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </section>
+
+  <!-- ===== 계산 기준 ===== -->
+  <section id="rates" class="container section">
+    <div class="section-head">
+      <h2>계산에 쓴 2026년 기준</h2>
+      <p>모든 계산은 이 요율과 공식으로 이루어집니다. 요율이 바뀌면 결과도 달라집니다.</p>
+    </div>
+
+    <div class="table-scroll">
+      <table class="data-table">
+        <thead>
+          <tr><th scope="col">항목</th><th scope="col">근로자 부담률</th><th scope="col">부과 기준</th><th scope="col">비고</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>국민연금</td><td>4.75%</td><td>기준소득월액</td><td>월 659만원 상한·월 41만원 하한</td></tr>
+          <tr><td>건강보험</td><td>3.545%</td><td>비과세를 뺀 월 보수</td><td>2026년 요율 반영</td></tr>
+          <tr><td>장기요양보험</td><td>건강보험료의 12.95%</td><td>건강보험료</td><td>건강보험료 × 12.95%</td></tr>
+          <tr><td>고용보험</td><td>0.9%</td><td>비과세를 뺀 월 보수</td><td>실업급여분 근로자 부담</td></tr>
+          <tr><td>소득세</td><td>6~45% 8단계</td><td>과세표준</td><td>근로소득공제·인적공제·근로소득세액공제 반영</td></tr>
+          <tr><td>지방소득세</td><td>소득세의 10%</td><td>결정세액</td><td>소득세와 함께 원천징수</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-hint">표는 좌우로 넘겨서 볼 수 있어요.</p>
+
+    <div class="info-grid" style="margin-top:22px">
+      <article class="info-card">
+        <span class="info-tag">실수령액</span>
+        <h3>연봉 → 월 실수령액</h3>
+        <p>연봉을 12로 나눈 값에서 비과세액을 뺀 금액에 4대보험료를 부과하고, 연간 기준으로 계산한 소득세·지방소득세를 12로 나눠 함께 뺍니다.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-tag">대출</span>
+        <h3>상환방식 3가지</h3>
+        <p>원리금균등은 매달 같은 금액, 원금균등은 원금을 똑같이 나눠 갚아 납입액이 줄어듭니다. 만기일시는 이자만 내다 만기에 원금을 갚습니다.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-tag">퇴직금</span>
+        <h3>평균임금 30일분 × 근속</h3>
+        <p>퇴직금 = 1일 평균임금 × 30일 × (재직일수 ÷ 365). 1년 이상 근무하면 법정 퇴직금이 발생하고, 상여금·연차수당도 3개월분이 포함됩니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== 연봉별 실수령액표 ===== -->
+  <section id="paytable" class="container section section-tint">
+    <div class="section-head">
+      <h2>2026년 연봉별 월 실수령액표</h2>
+      <p>부양가족 1명(본인), 월 비과세 식대 20만원 기준입니다. 내 조건과 다르면 위 계산기로 확인하세요.</p>
+    </div>
+
+    <div class="table-scroll">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th scope="col">세전 연봉</th>
+            <th scope="col">월 세전 급여</th>
+            <th scope="col">4대보험료</th>
+            <th scope="col">소득세·지방세</th>
+            <th scope="col">월 실수령액</th>
+            <th scope="col">연 실수령액</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>2,400만원</td><td>2,000,000원</td><td>173,773원</td><td>11,657원</td><td><strong>1,814,570원</strong></td><td>21,774,840원</td></tr>
+          <tr><td>3,000만원</td><td>2,500,000원</td><td>222,044원</td><td>23,015원</td><td><strong>2,254,941원</strong></td><td>27,059,292원</td></tr>
+          <tr><td>3,500만원</td><td>2,916,667원</td><td>262,270원</td><td>49,676원</td><td><strong>2,604,721원</strong></td><td>31,256,652원</td></tr>
+          <tr><td>4,000만원</td><td>3,333,333원</td><td>302,494원</td><td>104,850원</td><td><strong>2,925,989원</strong></td><td>35,111,868원</td></tr>
+          <tr><td>4,500만원</td><td>3,750,000원</td><td>342,720원</td><td>160,316원</td><td><strong>3,246,964원</strong></td><td>38,963,568원</td></tr>
+          <tr><td>5,000만원</td><td>4,166,667원</td><td>382,945원</td><td>215,985원</td><td><strong>3,567,737원</strong></td><td>42,812,844원</td></tr>
+          <tr><td>6,000만원</td><td>5,000,000원</td><td>463,396원</td><td>333,335원</td><td><strong>4,203,269원</strong></td><td>50,439,228원</td></tr>
+          <tr><td>7,000만원</td><td>5,833,333원</td><td>543,846원</td><td>450,686원</td><td><strong>4,838,801원</strong></td><td>58,065,612원</td></tr>
+          <tr><td>8,000만원</td><td>6,666,667원</td><td>624,297원</td><td>623,776원</td><td><strong>5,418,594원</strong></td><td>65,023,128원</td></tr>
+          <tr><td>1억원</td><td>8,333,333원</td><td>711,890원</td><td>1,018,651원</td><td><strong>6,602,792원</strong></td><td>79,233,504원</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="paytable-note">국민연금은 기준소득월액 상한(월 659만원)이 적용되어, 연봉 1억원 구간부터 보험료가 급여에 비례하지 않습니다.</p>
+  </section>
+
+  <!-- ===== 상환방식 비교 ===== -->
+  <section id="methods" class="container section">
+    <div class="section-head">
+      <h2>대출 상환방식, 이렇게 다릅니다</h2>
+      <p>같은 금액·금리·기간이라도 방식에 따라 월 부담과 총 이자가 달라집니다.</p>
+    </div>
+
+    <div class="method-grid">
+      <article class="method-card">
+        <span class="method-tag">원리금균등</span>
+        <h3>매달 내는 돈이 같아요</h3>
+        <p>원금과 이자를 합친 월 납입액이 일정합니다. 초반에는 이자 비중이 크고 원금은 천천히 줄어들지만, 매달 나가는 돈이 같아 생활비 계획을 세우기 가장 쉽습니다.</p>
+        <p class="method-who">이런 분께 → 월 납입액이 일정해야 하는 직장인, 주택담보대출</p>
+      </article>
+      <article class="method-card">
+        <span class="method-tag">원금균등</span>
+        <h3>갚는 원금이 같아요</h3>
+        <p>매달 갚는 원금이 일정해서 납입액이 점점 줄어듭니다. 같은 조건이면 원리금균등보다 총 이자가 적지만, 초반 몇 년의 월 부담이 가장 큽니다.</p>
+        <p class="method-who">이런 분께 → 초기 상환 여력이 있고 총 이자를 줄이고 싶은 분</p>
+      </article>
+      <article class="method-card">
+        <span class="method-tag">만기일시</span>
+        <h3>이자만 내다 만기에 상환</h3>
+        <p>대출 기간 동안 이자만 내고 만기에 원금을 한 번에 갚습니다. 월 부담은 가장 적지만 총 이자는 가장 많고, 만기 때 원금을 마련할 계획이 필요합니다.</p>
+        <p class="method-who">이런 분께 → 단기 자금이 필요한 분, 신용대출·전세자금 일부</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="container section section-tint">
+    <div class="section-head">
+      <h2>자주 묻는 질문</h2>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>월급 실수령액은 어떻게 계산하나요?</summary>
+        <p>세전 월급에서 근로자 부담 4대보험료(국민연금 4.75%, 건강보험 3.545%, 장기요양보험은 건강보험료의 12.95%, 고용보험 0.9%)와 소득세·지방소득세를 뺀 금액입니다. 소득세는 연간 급여로 근로소득공제·인적공제·4대보험료 소득공제·근로소득세액공제를 반영해 계산한 뒤 12로 나누고, 지방소득세는 소득세의 10%를 더합니다.</p>
+      </details>
+      <details>
+        <summary>2026년 4대보험 요율은 얼마인가요?</summary>
+        <p>2026년 근로자 부담분은 국민연금 4.75%, 건강보험 3.545%, 장기요양보험 12.95%(건강보험료 대비), 고용보험 0.9%입니다. 국민연금은 기준소득월액 상한(월 659만원)과 하한(월 41만원)이 적용되고, 건강보험·장기요양·고용보험은 비과세를 뺀 과세 급여 전체에 부과됩니다.</p>
+      </details>
+      <details>
+        <summary>식대 비과세 20만원은 무슨 뜻인가요?</summary>
+        <p>회사가 급여와 별도로 지급하는 식대는 월 20만원까지 소득세와 4대보험료를 매기지 않습니다. 그래서 연봉 4,500만원이라도 식대 20만원이 비과세로 처리되면 과세 대상 급여는 월 375만원이 됩니다. 이 계산기의 '월 비과세액'에 20을 넣으면 자동 반영됩니다.</p>
+      </details>
+      <details>
+        <summary>계산한 실수령액과 통장에 들어온 금액이 다른 이유는 무엇인가요?</summary>
+        <p>회사는 국세청 간이세액표로 매달 원천징수하기 때문에, 연간 소득으로 정산한 이 계산기와 월별 금액이 조금씩 다릅니다. 또 상여금·연장근로수당·직책수당, 식대·차량유지비 등 비과세 항목, 부양가족과 자녀 수, 학자금·보육수당 같은 회사별 항목에 따라 달라집니다. 정확한 금액은 급여명세서와 연말정산 결과로 확인하세요.</p>
+      </details>
+      <details>
+        <summary>원리금균등분할상환과 원금균등분할상환은 무엇이 다른가요?</summary>
+        <p>원리금균등은 매달 내는 돈(원금+이자)이 같아 가계 계획을 세우기 쉽고, 초반에는 이자 비중이 큽니다. 원금균등은 매달 갚는 원금이 같아 납입액이 점점 줄고, 같은 금리·기간이면 총 이자가 더 적습니다. 만기일시상환은 만기까지 이자만 내다가 만기에 원금을 한꺼번에 갚는 방식으로, 월 부담은 가장 적지만 총 이자는 가장 많습니다.</p>
+      </details>
+      <details>
+        <summary>퇴직금은 어떻게 계산하나요?</summary>
+        <p>퇴직금 = 1일 평균임금 × 30일 × (재직일수 ÷ 365)입니다. 1일 평균임금은 퇴직 직전 3개월 임금 총액을 그 3개월의 역일수로 나눈 금액이고, 여기에는 기본급·수당과 함께 연간 상여금과 연차수당의 3/12이 포함됩니다. 1년 이상 계속 근무한 근로자에게 법정 퇴직금이 발생합니다.</p>
+      </details>
+      <details>
+        <summary>1년 미만 근무하면 퇴직금을 받을 수 없나요?</summary>
+        <p>근로자퇴직급여 보장법상 계속 근로기간이 1년 미만이면 법정 퇴직금 지급 대상이 아닙니다. 다만 취업규칙이나 근로계약에서 별도로 정했다면 받을 수 있고, 수습 기간도 계속 근로기간에 포함됩니다. 이 계산기는 1년 미만일 때도 참고용 금액을 보여주지만 안내 문구를 함께 표시합니다.</p>
+      </details>
+      <details>
+        <summary>상여금과 연차수당도 퇴직금에 포함되나요?</summary>
+        <p>네. 평균임금 산정 기간(최근 3개월)에 지급된 임금이 기준이므로, 연간 상여금과 연차수당은 3개월분(연간 금액의 3/12)이 포함됩니다. 지급일이 3개월 밖이면 3/12로 계산하고, 회사 규정에 따라 지급률이 다르면 실제 지급액 기준으로 확인해야 합니다.</p>
+      </details>
+      <details>
+        <summary>퇴직금에 세금은 얼마나 떼나요?</summary>
+        <p>퇴직금은 근속연수와 환산급여에 따라 퇴직소득세와 지방소득세(퇴직소득세의 10%)가 부과되고, 근속연수가 길수록 공제가 커져 실효세율이 낮아집니다. 퇴직금을 IRP(개인형 퇴직연금) 계좌로 받으면 세금을 바로 떼지 않고 과세이연할 수 있습니다. 이 계산기는 세전 퇴직금만 보여주며 세금은 반영하지 않습니다.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== 관련 키워드 ===== -->
+  <section class="container section">
+    <div class="section-head">
+      <h2>관련 계산기·키워드</h2>
+      <p>자주 찾는 생활 계산 주제로 바로 이동하세요.</p>
+    </div>
+    <nav aria-label="관련 키워드">
+      <ul class="keyword-cloud">
+        <li><a href="#calc" data-jump="pay">월급 실수령액 계산기</a></li>
+        <li><a href="#paytable">2026 연봉 실수령액표</a></li>
+        <li><a href="#calc" data-jump="loan">대출이자 계산기</a></li>
+        <li><a href="#methods">원리금균등 계산</a></li>
+        <li><a href="#calc" data-jump="loan">원금균등 상환 이자</a></li>
+        <li><a href="#calc" data-jump="severance">퇴직금 계산기</a></li>
+        <li><a href="#calc" data-jump="severance">평균임금 계산</a></li>
+        <li><a href="#rates">2026 4대보험 요율</a></li>
+        <li><a href="#faq">퇴직소득세·IRP 과세이연</a></li>
+        <li><a href="index.html">연말정산 환급금 계산기</a></li>
+        <li><a href="fortune.html">2027 신년운세</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="container">
+    <p class="page-disclaimer">
+      <strong>안내.</strong> 이 페이지의 계산기는 2026년 11월 기준 공포·시행된 법령과 2026년 4대보험 요율을 바탕으로 만든 참고용 도구입니다. 세무·법률·금융 자문이 아니며, 실제 실수령액은 회사 급여 기준과 국세청 간이세액표, 실제 대출 약정, 회사의 퇴직금 규정에 따라 달라질 수 있습니다. 정확한 금액은 급여명세서·금융기관·노무 전문가에게 확인하세요.
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark small" aria-hidden="true">₩</span>
+      <div>
+        <p class="footer-title">스마트 라이프 툴즈</p>
+        <p class="footer-desc">돈과 생활에 바로 쓰는 계산기</p>
+      </div>
+    </div>
+    <nav class="footer-nav" aria-label="바닥글 메뉴">
+      <a href="index.html">연말정산 계산기</a>
+      <a href="calculator.html">생활계산기</a>
+      <a href="fortune.html">2027 신년운세</a>
+      <a href="about.html">사이트 소개</a>
+      <a href="privacy.html">개인정보처리방침</a>
+      <a href="mailto:a284322@gmail.com">문의 a284322@gmail.com</a>
+    </nav>
+    <p class="copyright">© 2026 스마트 라이프 툴즈. 계산 결과는 참고용이며 세무·금융 자문이 아닙니다.</p>
+  </div>
+</footer>
+
+<script src="calculator.js" defer></script>
+</body>
+</html>
