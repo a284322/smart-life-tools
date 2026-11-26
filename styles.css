@@ -895,7 +895,6 @@ label.switch-label.switch-row .switch { margin-top: 2px; }
   padding: 0;
   display: grid;
   gap: 10px;
-  max-width: 820px;
 }
 .checklist li {
   position: relative;
