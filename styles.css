@@ -791,6 +791,8 @@ label.switch-label.switch-row .switch { margin-top: 2px; }
   padding-left: 0; padding-right: 0;
 }
 .section-tint > * { max-width: 1140px; margin-left: auto; margin-right: auto; padding-left: 20px; padding-right: 20px; }
+/* 체크리스트 밴드: 배경은 전체 폭, 내용은 위아래 섹션(.container.section)과 같은 컨텐츠 박스에 맞춤 */
+.checklist-section > .container { padding-left: 0; padding-right: 0; }
 
 .section-head { max-width: 720px; margin-bottom: 26px; }
 .section-head h2 {
