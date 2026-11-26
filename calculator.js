@@ -1,7 +1,9 @@
 /* =========================================================
    생활계산기 – 월급 실수령액 · 대출이자 · 퇴직금
    기준: 2026년 4대보험 근로자 부담률, 소득세 기본세율 (2026-11 기준)
-   - 국민연금 4.75%(근로자), 건강보험 3.545%, 장기요양(건강보험료의 12.95%), 고용보험 0.9%
+   - 국민연금 4.75%(근로자), 건강보험 3.595%(전체 7.19%의 절반),
+     장기요양(건강보험료의 13.14% = 소득 대비 0.9448%), 고용보험 0.9%
+     ※ 출처: 국민건강보험공단 2026년 보험료율 안내(7.19%), 보건복지부 2026년 장기요양보험료율 0.9448% 의결
    - 소득세법 제47조(근로소득공제), 제50조·제51조(인적공제·보험료공제),
      제55조(세율), 제59조(근로소득세액공제), 제59조의4(표준세액공제)
    - 근로자퇴직급여 보장법 제8조(퇴직금 = 1일 평균임금 × 30일 × 재직일수/365)
@@ -15,8 +17,8 @@
   /* ---------------- 2026년 기준 상수 ---------------- */
   var RATES = {
     pension: 0.0475,
-    health: 0.03545,
-    longTermCareOfHealth: 0.1295,
+    health: 0.03595,
+    longTermCareOfHealth: 0.1314, // 0.9448% ÷ 7.19%
     employment: 0.009,
     pensionMonthlyCap: 6590000,
     pensionMonthlyFloor: 410000
@@ -443,8 +445,8 @@
     }
     rows.push(row('과세 대상 월급', won(r.monthlyTaxable), { sub: true }));
     rows.push(row('국민연금', '−' + won(r.monthly.pension), { minus: true, small: '과세급여 × 4.75%' }));
-    rows.push(row('건강보험', '−' + won(r.monthly.health), { minus: true, small: '과세급여 × 3.545%' }));
-    rows.push(row('장기요양보험', '−' + won(r.monthly.ltc), { minus: true, small: '건강보험료 × 12.95%' }));
+    rows.push(row('건강보험', '−' + won(r.monthly.health), { minus: true, small: '과세급여 × 3.595%' }));
+    rows.push(row('장기요양보험', '−' + won(r.monthly.ltc), { minus: true, small: '건강보험료 × 13.14%' }));
     rows.push(row('고용보험', '−' + won(r.monthly.employment), { minus: true, small: '과세급여 × 0.9%' }));
     rows.push(row('4대보험 합계', won(r.monthly.pension + r.monthly.health + r.monthly.ltc + r.monthly.employment), { sub: true }));
     rows.push(row('소득세', '−' + won(r.monthly.incomeTax), { minus: true, small: '연간 결정세액 ÷ 12' }));
