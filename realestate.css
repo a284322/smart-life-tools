@@ -1,0 +1,14 @@
+/* =========================================================
+   부동산 취득세·복비·전월세 전환 페이지 전용 (styles.css 위에 덧붙임)
+   ========================================================= */
+
+.fee-table td { white-space: nowrap; }
+
+/* 3개 탭은 좁은 화면에서 글자가 넘치지 않게 */
+@media (max-width: 520px) {
+  .tabbar.three .tab-btn { font-size: 12.5px; padding: 10px 4px; min-height: 54px; }
+  .tabbar.three .tab-btn small { font-size: 10px; }
+}
+
+/* 결과 카드의 긴 금액이 카드 밖으로 나가지 않게 */
+#rtTotal, #feeLimit, #cvResult { overflow-wrap: anywhere; }

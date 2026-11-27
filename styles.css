@@ -1302,3 +1302,68 @@ a.tool-card h3::after {
   .seg-btn { font-size: 12.5px; padding: 7px 3px; min-height: 42px; }
   .seg-3 .seg-btn { font-size: 11.5px; }
 }
+
+/* =========================================================
+   공통 유틸 (연봉·연금·부동산·삼재 페이지에서 함께 사용)
+   ========================================================= */
+.table-note {
+  margin: 10px 0 0;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.table-note b { color: var(--ink-2); }
+
+.mini-split {
+  margin: 4px 0 0;
+  padding: 12px 0 0;
+  border-top: 1px dashed var(--line);
+  display: grid;
+  gap: 6px;
+}
+.mini-split div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+.mini-split div strong { color: var(--ink); font-weight: 700; }
+
+/* 내비게이션: 도구 12개. 좁으면 가로로 밀려도 겹치지 않게 */
+.site-nav { gap: 16px; font-size: 13.5px; }
+.site-nav::after {
+  content: "";
+  flex: 0 0 1px;
+}
+@media (max-width: 1100px) {
+  .site-nav { gap: 13px; font-size: 13px; }
+}
+@media (max-width: 520px) {
+  .site-nav { gap: 11px; font-size: 12.5px; }
+}
+
+.check-line {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--ink-2);
+  cursor: pointer;
+  padding: 11px 13px;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  line-height: 1.4;
+}
+.check-line input {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  accent-color: var(--blue);
+}
+
+/* 탭 개수에 맞춘 열 배치 (2개·3개) */
+.tabbar.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tabbar.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }

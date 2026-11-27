@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZX4R8GGZR8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZX4R8GGZR8');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2027 연봉 실수령액·퇴직금 계산기 – 4대보험·소득세 떼고 월급 얼마? | 스마트 라이프 툴즈</title>
+<meta name="description" content="연봉이나 월급만 넣으면 2026·2027년 4대보험(국민연금·건강·장기요양·고용)과 소득세·지방소득세를 뺀 월 실수령액이 바로 나옵니다. 부양가족 수와 식대 20만원 비과세도 반영. 퇴직금 탭에서는 입사일·퇴사일·최근 3개월 급여와 상여금으로 예상 퇴직금과 퇴직소득세까지 계산합니다. 회원가입·개인정보 입력 없이 30초.">
+<meta name="keywords" content="연봉 실수령액 계산기, 2027 연봉 실수령액, 월급 실수령액, 4대보험 계산기, 국민연금 4.75%, 2027 국민연금 10%, 건강보험 7.19%, 장기요양 0.9448%, 고용보험 0.9%, 식대 비과세 20만원, 부양가족 공제, 퇴직금 계산기, 퇴직금 계산방법, 평균임금, 퇴직소득세, 근속연수공제, 환산급여공제, 연봉 5000 실수령액">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="스마트 라이프 툴즈">
+<meta name="theme-color" content="#2563eb">
+<link rel="canonical" href="https://tools.niceluckydays.com/salary.html">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="스마트 라이프 툴즈">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="연봉 실수령액·퇴직금 계산기 – 세금 떼고 통장에 들어오는 돈">
+<meta property="og:description" content="연봉 3천·5천·1억, 월급이 실제로 얼마인지 30초에 확인하세요. 2026·2027년 4대보험 요율과 퇴직금·퇴직소득세까지.">
+<meta property="og:url" content="https://tools.niceluckydays.com/salary.html">
+<meta property="og:image" content="https://tools.niceluckydays.com/assets/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="연봉 실수령액 계산기 – 4대보험·소득세 공제 후 월급">
+<meta name="twitter:description" content="부양가족·식대 비과세 반영. 퇴직금과 퇴직소득세도 같은 화면에서 계산합니다.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232563eb'/%3E%3Ctext x='32' y='44' font-size='34' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3E%E2%82%A9%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css?v=20261128d">
+<link rel="stylesheet" href="calculator.css?v=20261128d">
+
+<meta name="naver-site-verification" content="15ac2f25795a5444a1af3225a831af4b8e3e77b3" />
+
+<!-- Google AdSense (자동 광고 + 디스플레이 광고 단위) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7905972440351261" crossorigin="anonymous"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://tools.niceluckydays.com/#website",
+      "url": "https://tools.niceluckydays.com/",
+      "name": "스마트 라이프 툴즈",
+      "inLanguage": "ko-KR",
+      "description": "돈과 생활에 바로 쓰는 무료 계산기 모음. 연말정산 환급금, 자동차세 연납, 실업급여, 연봉 실수령액, 국민연금, 부동산 취득세·복비, 2027 신년운세·토정비결·타로를 제공합니다."
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://tools.niceluckydays.com/salary.html#app",
+      "name": "연봉 실수령액·퇴직금 계산기",
+      "url": "https://tools.niceluckydays.com/salary.html",
+      "applicationCategory": "FinanceApplication",
+      "applicationSubCategory": "CalculatorApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "ko-KR",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+      "featureList": [
+        "2026·2027년 4대보험 근로자 부담분 반영(국민연금 2026년 4.75%·2027년 5%, 건강보험 3.595%, 장기요양 0.4724%, 고용보험 0.9%)",
+        "연봉 또는 월급 입력, 부양가족 수와 식대 20만원 비과세 반영",
+        "근로소득공제·인적공제·4대보험료 공제·근로소득세액공제로 소득세와 지방소득세 계산",
+        "입사일·퇴사일·최근 3개월 급여·상여금으로 예상 퇴직금 계산",
+        "퇴직소득 근속연수공제·환산급여공제로 퇴직소득세와 지방소득세 추정"
+      ],
+      "description": "연봉과 부양가족, 식대 비과세를 넣으면 2026·2027년 기준 4대보험료와 소득세를 공제한 월 실수령액을 계산하고, 입사일과 최근 3개월 급여로 예상 퇴직금과 퇴직소득세를 계산하는 무료 웹 계산기입니다."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tools.niceluckydays.com/salary.html#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "스마트 라이프 툴즈", "item": "https://tools.niceluckydays.com/" },
+        { "@type": "ListItem", "position": 2, "name": "연봉 실수령액·퇴직금 계산기", "item": "https://tools.niceluckydays.com/salary.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tools.niceluckydays.com/salary.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "연봉 5,000만원이면 월 실수령액은 얼마인가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "부양가족 1명(본인), 식대 월 20만원 비과세 기준으로 2026년 요율을 적용하면 4대보험료가 월 36만원 안팎이고 소득세·지방소득세가 월 12만원 안팎이라 월 실수령액은 368만원 안팎입니다. 부양가족이 늘거나 비과세 항목이 많으면 실수령액이 조금 늘고, 상여금이 연봉에 포함돼 있으면 계산이 달라집니다." }
+        },
+        {
+          "@type": "Question",
+          "name": "2027년에는 실수령액이 줄어드나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "국민연금 보험료율이 2026년 9.5%에서 2027년 10%로 0.5%포인트 오르면서 근로자 부담이 0.25%포인트 늘어납니다. 월급 300만원이면 월 7,500원, 연 9만원 정도 줄어듭니다. 건강보험 7.19%, 고용보험 0.9%는 2027년 요율이 아직 고시되지 않아 같은 값을 적용했습니다." }
+        },
+        {
+          "@type": "Question",
+          "name": "식대 20만원은 왜 세금이 안 붙나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "소득세법 제12조 제3호 러목은 회사에서 현물 식사를 받지 않는 근로자가 받는 월 20만원 이하의 식사대를 비과세로 정하고 있습니다. 2023년에 한도가 10만원에서 20만원으로 올랐고 2026년 현재도 20만원입니다. 연봉계약서나 급여지급기준에 식대 항목이 있어야 하고, 구내식당 밥을 함께 먹으면 현금 식대는 전액 과세됩니다." }
+        },
+        {
+          "@type": "Question",
+          "name": "퇴직금은 어떻게 계산하나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "근로자퇴직급여 보장법 제8조에 따라 퇴직금은 '1일 평균임금 × 30일 × (재직일수 ÷ 365)'입니다. 평균임금은 퇴직 전 3개월 임금총액을 그 기간의 총일수로 나눈 금액이고, 여기에 연간 상여금의 3/12과 연차수당의 3/12을 더합니다. 1년 이상 계속 근무해야 대상입니다." }
+        },
+        {
+          "@type": "Question",
+          "name": "퇴직금에도 세금이 붙나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "붙습니다. 퇴직소득세는 퇴직금에서 근속연수공제를 빼고, 남은 금액을 근속연수로 나눠 12를 곱한 환산급여에서 다시 환산급여공제를 뺀 뒤 기본세율을 적용합니다. 그 세액을 12로 나눠 근속연수를 곱해 최종 세액을 구하고, 여기에 지방소득세 10%가 더해집니다. 근속이 길수록 공제가 커져 실효세율은 낮아집니다." }
+        },
+        {
+          "@type": "Question",
+          "name": "계산 결과와 실제 월급명세서가 다른 이유는 무엇인가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "회사는 매달 국세청 근로소득 간이세액표로 세금을 떼기 때문에, 연간 소득으로 계산한 이 결과와 매달 조금씩 차이가 납니다. 연말정산에서 차액이 정리됩니다. 또 비과세 항목(자가운전보조금·보육수당 등), 학자금·식대 외 복리후생, 건강보험 보수월액 정산, 우리사주·주식보상은 반영하지 않습니다." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#calc">계산기로 바로 가기</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="스마트 라이프 툴즈 홈">
+      <span class="brand-mark" aria-hidden="true">₩</span>
+      <span class="brand-text">스마트 라이프 툴즈</span>
+    </a>
+    <nav class="site-nav" aria-label="주요 메뉴">
+      <a href="index.html" data-nav="calc">연말정산<span class="nav-long"> 계산기</span></a>
+      <a href="calculator.html" data-nav="life">생활계산기</a>
+      <a href="car-tax.html" data-nav="cartax">자동차세</a>
+      <a href="unemployment.html" data-nav="unemp">실업급여</a>
+      <a href="subsidy.html" data-nav="subsidy">지원금</a>
+      <a href="salary.html" class="is-active" data-nav="salary" aria-current="page">연봉<span class="nav-long">·퇴직금</span></a>
+      <a href="pension.html" data-nav="pension">연금<span class="nav-long">·4대보험</span></a>
+      <a href="realestate.html" data-nav="realty">부동산<span class="nav-long"> 계산</span></a>
+      <a href="samjae.html" data-nav="samjae">삼재<span class="nav-long">·로또</span></a>
+      <a href="fortune.html" data-nav="fortune"><span class="nav-long">2027 </span>신년운세</a>
+      <a href="tojeong.html" data-nav="tojeong">토정비결</a>
+      <a href="tarot.html" data-nav="tarot">타로<span class="nav-long">·궁합</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">2026·2027년 4대보험 요율 · 회원가입 없이 바로 계산</p>
+      <h1>연봉 실수령액 · 퇴직금 계산기</h1>
+      <p class="hero-sub">연봉 3,000만원과 5,000만원, 통장에 들어오는 돈은 얼마나 다를까요?<br class="br-desktop"> 4대보험과 세금을 뺀 <strong>월 실수령액</strong>과, 그동안 모인 <strong>퇴직금</strong>을 한 화면에서 계산합니다.</p>
+      <ul class="hero-badges">
+        <li>2026년 국민연금 4.75% · 2027년 5%</li>
+        <li>식대 20만원 비과세 반영</li>
+        <li>입력값 서버 전송 없음</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AdSense 광고: 상단 배너 (도구 위) -->
+  <div class="container">
+    <div class="ad-slot" data-ad-slot="top">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7905972440351261"
+           data-ad-slot="6595337008"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </div>
+
+  <!-- ===== 계산기 ===== -->
+  <section id="calc" class="calc-section container" aria-labelledby="calcTitle">
+    <h2 id="calcTitle" class="sr-only">연봉 실수령액·퇴직금 계산기</h2>
+
+    <div class="tabbar two" role="tablist" aria-label="계산기 종류">
+      <button type="button" class="tab-btn is-active" data-tab="pay" data-panel="panelPay" role="tab" aria-selected="true" aria-controls="panelPay">연봉 실수령액<small>세금 떼고 얼마</small></button>
+      <button type="button" class="tab-btn" data-tab="severance" data-panel="panelSeverance" role="tab" aria-selected="false" aria-controls="panelSeverance">퇴직금<small>그동안 모인 돈</small></button>
+    </div>
+
+    <!-- ---------- 탭 1: 연봉 실수령액 ---------- -->
+    <div class="tab-panel" id="panelPay" role="tabpanel">
+      <p class="panel-intro">연봉(또는 월급)과 부양가족 수만 넣으면 <strong>4대보험료·소득세·지방소득세</strong>를 뺀 월 실수령액이 바로 나옵니다. 값을 바꾸면 결과도 즉시 바뀝니다.</p>
+
+      <div class="calc-grid">
+        <form class="card form-card" id="payForm" novalidate>
+          <div class="card-head">
+            <h3>내 급여 조건</h3>
+            <span class="label-note">세전 기준</span>
+          </div>
+
+          <fieldset class="field-group">
+            <legend>1. 기준 연도</legend>
+            <div class="field">
+              <span class="field-label" id="yearLabel">요율을 적용할 연도</span>
+              <div class="seg" role="group" aria-labelledby="yearLabel" id="payYearSeg">
+                <button type="button" class="seg-btn is-active" data-year="2026" aria-pressed="true">2026년<small>국민연금 4.75%</small></button>
+                <button type="button" class="seg-btn" data-year="2027" aria-pressed="false">2027년<small>국민연금 5%</small></button>
+              </div>
+              <p class="help">2026년은 국민연금 9.5%(근로자 4.75%), 2027년은 10%(근로자 5%)입니다. 건강보험·고용보험은 2027년 요율이 아직 고시 전이라 2026년 값을 적용합니다.</p>
+            </div>
+          </fieldset>
+
+          <fieldset class="field-group">
+            <legend>2. 급여</legend>
+            <div class="field">
+              <span class="field-label" id="unitLabel">입력 단위</span>
+              <div class="seg" role="group" aria-labelledby="unitLabel" id="payUnitSeg">
+                <button type="button" class="seg-btn is-active" data-unit="year" aria-pressed="true">연봉</button>
+                <button type="button" class="seg-btn" data-unit="month" aria-pressed="false">월급</button>
+              </div>
+            </div>
+            <div class="field">
+              <label for="paySalary" id="paySalaryLabel">세전 연봉 <span class="unit">원</span></label>
+              <div class="input-wrap">
+                <input id="paySalary" name="paySalary" type="text" inputmode="numeric" autocomplete="off"
+                       data-unit="num" placeholder="50,000,000" value="50,000,000">
+                <span class="suffix">원</span>
+              </div>
+              <div class="chips" role="group" aria-label="대표 연봉 빠른 선택">
+                <button type="button" class="chip" data-pay="30000000">3,000만</button>
+                <button type="button" class="chip" data-pay="40000000">4,000만</button>
+                <button type="button" class="chip is-active" data-pay="50000000">5,000만</button>
+                <button type="button" class="chip" data-pay="70000000">7,000만</button>
+                <button type="button" class="chip" data-pay="100000000">1억</button>
+              </div>
+              <p class="help">상여금·수당을 포함한 세전 총액을 넣으세요. 월급으로 입력하면 12개월분으로 환산합니다.</p>
+            </div>
+          </fieldset>
+
+          <fieldset class="field-group">
+            <legend>3. 공제 조건</legend>
+            <div class="field">
+              <label for="payFamily">부양가족 수 (본인 포함)</label>
+              <div class="select-wrap">
+                <select id="payFamily" name="payFamily">
+                  <option value="1" selected>1명 (본인만)</option>
+                  <option value="2">2명 (배우자)</option>
+                  <option value="3">3명</option>
+                  <option value="4">4명</option>
+                  <option value="5">5명</option>
+                  <option value="6">6명 이상</option>
+                </select>
+              </div>
+              <p class="help">기본공제는 1인당 연 150만원입니다. 65세 이상·장애인 추가공제는 반영하지 않습니다.</p>
+            </div>
+
+            <div class="field">
+              <label for="payMeal">식대 비과세 (월)</label>
+              <div class="input-wrap">
+                <input id="payMeal" name="payMeal" type="text" inputmode="numeric" autocomplete="off"
+                       data-unit="num" placeholder="200,000" value="200,000">
+                <span class="suffix">원</span>
+              </div>
+              <div class="chips" role="group" aria-label="비과세 식대 빠른 선택">
+                <button type="button" class="chip is-active" data-meal="200000">20만원</button>
+                <button type="button" class="chip" data-meal="150000">15만원</button>
+                <button type="button" class="chip" data-meal="100000">10만원</button>
+                <button type="button" class="chip" data-meal="0">없음</button>
+              </div>
+              <p class="help">회사가 현물 식사를 주지 않고 급여기준에 식대가 정해져 있을 때 월 20만원까지 비과세입니다. 연봉에 식대가 포함돼 있지 않다면 0원으로 두세요.</p>
+            </div>
+          </fieldset>
+
+          <div class="form-foot">
+            <button type="submit" class="calc-btn">실수령액 계산하기</button>
+          </div>
+        </form>
+
+        <aside class="card result-card" id="payResultCard">
+          <div class="result-banner">
+            <p class="result-label">월 예상 실수령액</p>
+            <p class="result-amount" id="sNet">0원</p>
+            <p class="result-note" id="sNote"></p>
+          </div>
+
+          <dl class="quick-stats">
+            <div>
+              <dt>월 공제 합계</dt>
+              <dd id="sDeduct">0원</dd>
+            </div>
+            <div>
+              <dt>공제율</dt>
+              <dd id="sRate">-</dd>
+            </div>
+            <div>
+              <dt>연 실수령액</dt>
+              <dd id="sAnnual">0원</dd>
+            </div>
+          </dl>
+
+          <details class="receipt-wrap" open>
+            <summary>월급명세서처럼 보기</summary>
+            <table class="receipt">
+              <caption class="sr-only">세전 급여에서 4대보험료와 세금을 빼 실수령액까지 계산한 내역</caption>
+              <tbody id="sReceipt"></tbody>
+            </table>
+          </details>
+
+          <p class="table-note" id="sTaxNote"></p>
+
+          <p class="result-disclaimer">
+            참고용 추정치입니다. 회사는 매달 근로소득 간이세액표로 세금을 떼기 때문에 월별 금액은 조금 다를 수 있고, 연말정산에서 차액이 정리됩니다. 계산은 소득세법 제47조·제50조·제51조의3·제52조·제55조·제59조와 2026년 4대보험 요율(국민연금법 제88조, 건강보험법 시행령 제44조, 노인장기요양보험법 시행령 제4조, 고용보험법 시행령)로 했습니다.
+          </p>
+        </aside>
+      </div>
+    </div>
+
+    <!-- ---------- 탭 2: 퇴직금 ---------- -->
+    <div class="tab-panel" id="panelSeverance" role="tabpanel" hidden>
+      <p class="panel-intro">입사일과 퇴사일, 최근 3개월 급여와 상여금을 넣으면 <strong>1일 평균임금</strong>과 <strong>예상 퇴직금</strong>, 퇴직소득세까지 계산합니다. 1년 미만 근무는 퇴직금 대상이 아닙니다.</p>
+
+      <div class="calc-grid">
+        <form class="card form-card" id="sevForm" novalidate>
+          <div class="card-head">
+            <h3>근무 기간</h3>
+            <span class="label-note">1년 이상</span>
+          </div>
+
+          <fieldset class="field-group">
+            <legend>1. 입사일과 퇴사일</legend>
+            <div class="field-row">
+              <div class="field">
+                <label for="sevStart">입사일</label>
+                <div class="input-wrap">
+                  <input id="sevStart" name="sevStart" type="date" value="2016-03-02">
+                </div>
+              </div>
+              <div class="field">
+                <label for="sevEnd">퇴사일(예정일)</label>
+                <div class="input-wrap">
+                  <input id="sevEnd" name="sevEnd" type="date" value="2026-12-31">
+                </div>
+              </div>
+            </div>
+            <p class="help">재직일수는 입사일 다음 날부터 퇴사일까지로 계산합니다.</p>
+          </fieldset>
+
+          <fieldset class="field-group">
+            <legend>2. 최근 3개월 급여</legend>
+            <div class="field">
+              <label for="sevSalary3m">최근 3개월 급여 총액 <span class="unit">원</span></label>
+              <div class="input-wrap">
+                <input id="sevSalary3m" name="sevSalary3m" type="text" inputmode="numeric" autocomplete="off"
+                       data-unit="num" placeholder="9,000,000" value="9,000,000">
+                <span class="suffix">원</span>
+              </div>
+              <p class="help">퇴직 전 3개월(예: 10·11·12월)에 받은 기본급과 각종 수당의 합계입니다. 월급 300만원이면 900만원입니다.</p>
+            </div>
+
+            <div class="field">
+              <label for="sevBonus">연간 상여금 총액</label>
+              <div class="input-wrap">
+                <input id="sevBonus" name="sevBonus" type="text" inputmode="numeric" autocomplete="off"
+                       data-unit="num" placeholder="0" value="0">
+                <span class="suffix">원</span>
+              </div>
+              <p class="help">평균임금에 연간 상여금의 3/12을 더합니다. 3개월 안에 지급된 상여금은 위 3개월 급여에 넣으세요.</p>
+            </div>
+
+            <div class="field">
+              <label for="sevLeave">연간 연차수당</label>
+              <div class="input-wrap">
+                <input id="sevLeave" name="sevLeave" type="text" inputmode="numeric" autocomplete="off"
+                       data-unit="num" placeholder="0" value="0">
+                <span class="suffix">원</span>
+              </div>
+              <p class="help">퇴직으로 정산받는 연차수당이 있으면 넣으세요. 없는 경우 0원입니다.</p>
+            </div>
+          </fieldset>
+
+          <div class="form-foot">
+            <button type="submit" class="calc-btn">퇴직금 계산하기</button>
+          </div>
+        </form>
+
+        <aside class="card result-card" id="sevResultCard">
+          <div class="result-banner">
+            <p class="result-label">예상 퇴직금 (세전)</p>
+            <p class="result-amount" id="vTotal">0원</p>
+            <p class="result-note" id="vNote"></p>
+          </div>
+
+          <dl class="quick-stats">
+            <div>
+              <dt>1일 평균임금</dt>
+              <dd id="vDaily">0원</dd>
+            </div>
+            <div>
+              <dt>재직일수</dt>
+              <dd id="vDays">-</dd>
+            </div>
+            <div>
+              <dt>세후 참고</dt>
+              <dd id="vNet">0원</dd>
+            </div>
+          </dl>
+
+          <div class="mini-split" id="vSplit"></div>
+
+          <details class="receipt-wrap" open>
+            <summary>계산 과정 보기</summary>
+            <table class="receipt">
+              <caption class="sr-only">최근 3개월 급여에서 퇴직소득세를 뺀 세후 퇴직금까지 계산 과정</caption>
+              <tbody id="vReceipt"></tbody>
+            </table>
+          </details>
+
+          <p class="notice-warn" id="vWarn" hidden></p>
+
+          <p class="result-disclaimer">
+            참고용 추정치입니다. 근로자퇴직급여 보장법 제8조(1일 평균임금 × 30일 × 재직일수/365)와 소득세법 제48조(퇴직소득공제)·제55조(세율)로 계산했습니다. 실제 퇴직금은 취업규칙·단체협약에서 정한 평균임금, 퇴직연금(DC·IRP) 운용수익에 따라 달라지며, 퇴직소득세는 회사가 원천징수합니다.
+          </p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 기준 ===== -->
+  <section id="rates" class="container section">
+    <div class="section-head">
+      <h2>계산에 쓴 2026·2027년 기준</h2>
+      <p>요율과 공제는 법령에 숫자로 정해져 있습니다. 바뀌는 항목과 그대로인 항목을 나눠 봤습니다.</p>
+    </div>
+
+    <div class="table-scroll">
+      <table class="data-table">
+        <thead>
+          <tr><th scope="col">항목</th><th scope="col">2026년</th><th scope="col">2027년</th><th scope="col">근거</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>국민연금 (근로자)</td><td>4.75%</td><td>5%</td><td>국민연금법 제88조</td></tr>
+          <tr><td>건강보험 (근로자)</td><td>3.595%</td><td>3.595% (동결)</td><td>건강보험법 시행령 제44조</td></tr>
+          <tr><td>장기요양 (근로자)</td><td>0.4724%</td><td>미고시</td><td>노인장기요양보험법 시행령 제4조</td></tr>
+          <tr><td>고용보험 (근로자)</td><td>0.9%</td><td>미고시</td><td>고용보험 및 산업재해보상보험의 보험료징수 등에 관한 법률 시행령 제12조</td></tr>
+          <tr><td>근로자 4대보험 합계</td><td>9.7174%</td><td>10% 이상</td><td>국민연금 인상분 반영</td></tr>
+          <tr><td>식대 비과세</td><td colspan="2">월 20만원 이하</td><td>소득세법 제12조 제3호 러목</td></tr>
+          <tr><td>기본공제</td><td colspan="2">1인당 연 150만원</td><td>소득세법 제50조</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-hint">표는 좌우로 넘겨서 볼 수 있어요.</p>
+    <p class="table-note">2025년 4월 국민연금법 개정으로 보험료율이 2026년부터 2033년까지 매년 0.5%포인트씩 오릅니다(근로자·사업주 각 0.25%포인트). 2026년 9.5%, 2027년 10%, 2033년 13%가 됩니다. 장기요양보험료율과 고용보험료율은 매년 말에 다음 해 요율이 고시되므로, 2027년 값이 나오면 갱신합니다.</p>
+
+    <div class="info-grid" style="margin-top:22px">
+      <article class="info-card">
+        <span class="info-tag">연봉 3,000만</span>
+        <h3>월 실수령 226만원 안팎</h3>
+        <p>4대보험이 월 24만원, 소득세·지방소득세가 월 5만원 안팎입니다. 비과세 식대를 넣으면 조금 늘어납니다.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-tag">연봉 5,000만</span>
+        <h3>월 실수령 368만원 안팎</h3>
+        <p>공제율은 11~12% 수준입니다. 연봉이 오를수록 소득세 구간이 올라 공제율도 함께 올라갑니다.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-tag">연봉 1억</span>
+        <h3>월 실수령 680만원 안팎</h3>
+        <p>국민연금은 기준소득월액 상한(659만원)까지만 부과되어, 월급이 더 올라도 연금보험료는 늘지 않습니다.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-tag">퇴직금</span>
+        <h3>1년 근속에 한 달치</h3>
+        <p>월급 300만원씩 10년 일하면 3,000만원 안팎입니다. 상여금이 평균임금에 더해지면 조금 커집니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== 읽을거리 ===== -->
+  <section class="container section section-tint">
+    <div class="section-head">
+      <h2>월급에서 빠지는 돈, 이렇게 정해집니다</h2>
+      <p>같은 연봉이라도 부양가족과 비과세 항목에 따라 통장에 들어오는 금액이 달라집니다.</p>
+    </div>
+    <div class="info-grid">
+      <article class="info-card">
+        <span class="info-tag">1</span>
+        <h3>4대보험은 거의 모두 월급에 비례</h3>
+        <p>국민연금·건강보험·장기요양·고용보험 모두 과세 급여에 요율을 곱합니다. 국민연금만 기준소득월액 상한(2026년 7월~2027년 6월 659만원)이 있습니다.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-tag">2</span>
+        <h3>소득세는 연 단위로 계산</h3>
+        <p>연간 총급여에서 근로소득공제(최대 2,000만원)와 인적공제·4대보험료를 빼 과세표준을 만들고, 6~45% 누진세율을 적용합니다. 여기서 근로소득세액공제를 뺀 금액이 결정세액입니다.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-tag">3</span>
+        <h3>부양가족 1명에 연 150만원</h3>
+        <p>배우자·자녀·부모를 기본공제에 넣으면 과세표준이 줄어 소득세가 내려갑니다. 20세 이하 자녀가 있으면 자녀세액공제도 따로 받습니다.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-tag">4</span>
+        <h3>비과세를 먼저 빼고 계산</h3>
+        <p>식대 20만원, 자가운전보조금 20만원, 6세 이하 자녀 보육수당(자녀 1명당 월 20만원)은 세금과 4대보험 계산에서 빠집니다. 연봉에 포함돼 있다면 따로 입력하는 편이 정확합니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="container section">
+    <div class="section-head">
+      <h2>자주 묻는 질문</h2>
+      <p>연봉·월급·퇴직금에서 가장 많이 헷갈리는 부분만 모았습니다.</p>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>연봉 5,000만원이면 월 실수령액은 얼마인가요?</summary>
+        <p>부양가족 1명(본인), 식대 월 20만원 비과세 기준으로 2026년 요율을 적용하면 4대보험료가 월 36만원 안팎, 소득세·지방소득세가 월 12만원 안팎이라 월 실수령액은 368만원 안팎입니다. 부양가족이 늘면 조금 오르고, 상여금이 연봉에 포함돼 있으면 월별 금액은 달라집니다.</p>
+      </details>
+      <details>
+        <summary>2027년에는 월급이 줄어드나요?</summary>
+        <p>국민연금 보험료율이 9.5%에서 10%로 올라 근로자 부담이 0.25%포인트 늘어납니다. 월급 300만원이면 월 7,500원, 연 9만원 정도 적어집니다. 건강보험(7.19%)은 2027년 동결로 확인되고, 장기요양·고용보험은 아직 고시 전이라 2026년 요율을 그대로 적용했습니다.</p>
+      </details>
+      <details>
+        <summary>식대 20만원은 왜 비과세인가요?</summary>
+        <p>소득세법 제12조 제3호 러목이 회사에서 현물 식사를 받지 않는 근로자의 월 20만원 이하 식사대를 비과세로 정하고 있습니다. 연봉계약서나 급여지급기준에 식대가 있어야 하고, 구내식당을 함께 이용하면 현금 식대는 전액 과세됩니다. 두 회사에서 받으면 합쳐서 20만원까지입니다.</p>
+      </details>
+      <details>
+        <summary>퇴직금은 어떻게 계산하나요?</summary>
+        <p>퇴직금 = 1일 평균임금 × 30일 × (재직일수 ÷ 365)입니다. 1일 평균임금은 퇴직 전 3개월 임금총액을 그 기간 총일수로 나눈 값이고, 여기에 연간 상여금과 연차수당의 3/12을 더합니다. 1년 이상 계속 근무해야 받을 수 있습니다.</p>
+      </details>
+      <details>
+        <summary>퇴직금 세금은 얼마나 떼나요?</summary>
+        <p>퇴직금 1억원, 근속 20년이면 근속연수공제 4,000만원을 빼고 환산급여 3,600만원을 구한 뒤 환산급여공제 2,480만원을 빼 과세표준 1,120만원에 6%를 적용합니다. 산출세액은 112만원이고 지방소득세 11만 2천원이 더해집니다. 실효세율은 1.2% 수준입니다.</p>
+      </details>
+      <details>
+        <summary>계산 결과와 실제 월급명세서가 다른 이유는 무엇인가요?</summary>
+        <p>회사는 매달 국세청 근로소득 간이세액표로 세금을 떼고, 연말정산에서 차액을 정리합니다. 또 자가운전보조금·보육수당 같은 다른 비과세 항목, 건강보험 보수월액 정산, 주식보상은 이 계산에 들어 있지 않습니다.</p>
+      </details>
+      <details>
+        <summary>퇴직연금에 가입돼 있으면 퇴직금이 다른가요?</summary>
+        <p>DB형은 퇴직금과 같은 방식(평균임금 × 근속)으로 적립되고, DC형·IRP는 매년 연봉의 1/12을 넣어 운용한 결과가 퇴직금이 됩니다. 운용수익이 나면 퇴직금이 더 커지고, 손실이 나면 줄어들 수 있습니다. 이 계산기는 법정 퇴직금 기준입니다.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== 다른 도구 ===== -->
+  <section class="container section section-tint">
+    <div class="section-head">
+      <h2>돈 되는 일, 같이 계산해 보세요</h2>
+      <p>회원가입 없이 바로 쓰는 무료 계산기입니다.</p>
+    </div>
+
+    <div class="info-grid">
+      <a class="info-card tool-card" href="pension.html">
+        <span class="info-tag">노후</span>
+        <h3>국민연금 예상수령액 · 4대보험 계산기</h3>
+        <p>월 소득과 가입기간으로 노령연금 월액을 계산하고, 근로자·사업주 4대보험료를 나눠 봅니다.</p>
+      </a>
+      <a class="info-card tool-card" href="realestate.html">
+        <span class="info-tag">부동산</span>
+        <h3>취득세 · 복비 · 전월세 전환 계산기</h3>
+        <p>집 살 때 세금과 중개보수 상한, 보증금을 월세로 바꿀 때의 법정 전환율까지.</p>
+      </a>
+      <a class="info-card tool-card" href="index.html">
+        <span class="info-tag">환급</span>
+        <h3>2026 연말정산 환급금 계산기</h3>
+        <p>연봉과 공제 항목을 넣으면 돌려받을 세금이 나옵니다. 13월의 월급, 미리 확인하세요.</p>
+      </a>
+      <a class="info-card tool-card" href="unemployment.html">
+        <span class="info-tag">실업</span>
+        <h3>실업급여 · 근로장려금 계산기</h3>
+        <p>퇴직 전 월급과 가입기간으로 구직급여 1일액과 총 수령액을 계산합니다.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="container">
+    <p class="page-disclaimer">
+      <strong>안내.</strong> 이 페이지의 계산기는 2026년 11월 기준 시행 중인 「소득세법」, 「국민연금법」, 「국민건강보험법」, 「노인장기요양보험법」, 「고용보험법」, 「근로자퇴직급여 보장법」과 2026년 보험료율 고시로 만든 참고용 도구입니다. 세무·법률 자문이 아니며, 실제 급여·퇴직금은 회사 규정과 국세청 신고 결과가 기준입니다. 정확한 금액은 회사 급여 담당자, 국민연금공단(nps.or.kr), 홈택스에서 확인하세요. 입력값은 브라우저 안에서만 계산되고 어디로도 전송되지 않습니다.
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark small" aria-hidden="true">₩</span>
+      <div>
+        <p class="footer-title">스마트 라이프 툴즈</p>
+        <p class="footer-desc">돈과 생활에 바로 쓰는 계산기</p>
+      </div>
+    </div>
+    <nav class="footer-nav" aria-label="바닥글 메뉴">
+      <a href="index.html">연말정산 계산기</a>
+      <a href="calculator.html">생활계산기</a>
+      <a href="car-tax.html">자동차세 연납</a>
+      <a href="unemployment.html">실업급여 계산기</a>
+      <a href="subsidy.html">내 지원금 찾기</a>
+      <a href="salary.html">연봉·퇴직금</a>
+      <a href="pension.html">국민연금·4대보험</a>
+      <a href="realestate.html">취득세·복비</a>
+      <a href="samjae.html">삼재·로또</a>
+      <a href="fortune.html">2027 신년운세</a>
+      <a href="tojeong.html">2027 토정비결</a>
+      <a href="tarot.html">타로·궁합</a>
+      <a href="about.html">사이트 소개</a>
+      <a href="privacy.html">개인정보처리방침</a>
+      <a href="mailto:a284322@gmail.com">문의 a284322@gmail.com</a>
+    </nav>
+    <p class="copyright">© 2026 스마트 라이프 툴즈. 계산 결과는 참고용이며 법률·세무 자문이 아닙니다.</p>
+  </div>
+</footer>
+
+<script src="salary.js?v=20261128d" defer></script>
+<script src="nav.js?v=20261128d" defer></script>
+</body>
+</html>
