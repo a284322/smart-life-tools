@@ -32,9 +32,9 @@
 <meta name="twitter:description" content="다주택 중과와 85㎡ 농특세, 월세 환산보증금까지 반영합니다.">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232563eb'/%3E%3Ctext x='32' y='44' font-size='34' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3E%E2%82%A9%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css?v=20261128d">
-<link rel="stylesheet" href="calculator.css?v=20261128d">
-<link rel="stylesheet" href="realestate.css?v=20261128d">
+<link rel="stylesheet" href="styles.css?v=20261128e">
+<link rel="stylesheet" href="calculator.css?v=20261128e">
+<link rel="stylesheet" href="realestate.css?v=20261128e">
 
 <meta name="naver-site-verification" content="15ac2f25795a5444a1af3225a831af4b8e3e77b3" />
 
@@ -186,13 +186,13 @@
     <h2 id="calcTitle" class="sr-only">부동산 취득세·중개보수·전월세 전환 계산기</h2>
 
     <div class="tabbar three" role="tablist" aria-label="계산기 종류">
-      <button type="button" class="tab-btn is-active" data-tab="tax" data-panel="panelTax" role="tab" aria-selected="true" aria-controls="panelTax">취득세<small>집 살 때 세금</small></button>
-      <button type="button" class="tab-btn" data-tab="fee" data-panel="panelFee" role="tab" aria-selected="false" aria-controls="panelFee">복비<small>중개보수 상한</small></button>
-      <button type="button" class="tab-btn" data-tab="convert" data-panel="panelConvert" role="tab" aria-selected="false" aria-controls="panelConvert">전월세 전환<small>보증금 ↔ 월세</small></button>
+      <button type="button" class="tab-btn is-active" data-tab="tax" data-panel="tax" role="tab" aria-selected="true" aria-controls="panelTax">취득세<small>집 살 때 세금</small></button>
+      <button type="button" class="tab-btn" data-tab="fee" data-panel="fee" role="tab" aria-selected="false" aria-controls="panelFee">복비<small>중개보수 상한</small></button>
+      <button type="button" class="tab-btn" data-tab="convert" data-panel="convert" role="tab" aria-selected="false" aria-controls="panelConvert">전월세 전환<small>보증금 ↔ 월세</small></button>
     </div>
 
     <!-- ---------- 탭 1: 취득세 ---------- -->
-    <div class="tab-panel" id="panelTax" role="tabpanel">
+    <div class="tab-panel" id="panelTax" data-panel="tax" role="tabpanel">
       <p class="panel-intro">매매가와 <strong>취득 후 주택 수</strong>만 넣으면 취득세·지방교육세·농어촌특별세를 계산합니다. 다주택 중과와 85㎡ 기준도 반영됩니다.</p>
 
       <div class="calc-grid">
@@ -309,7 +309,7 @@
     </div>
 
     <!-- ---------- 탭 2: 복비 ---------- -->
-    <div class="tab-panel" id="panelFee" role="tabpanel" hidden>
+    <div class="tab-panel" id="panelFee" data-panel="fee" role="tabpanel" hidden>
       <p class="panel-intro">중개보수는 법이 정한 <strong>상한요율</strong>이 있습니다. 매매·전세·월세 거래금액을 넣으면 한쪽이 낼 수 있는 최대 금액이 나옵니다.</p>
 
       <div class="calc-grid">
@@ -414,7 +414,7 @@
     </div>
 
     <!-- ---------- 탭 3: 전월세 전환 ---------- -->
-    <div class="tab-panel" id="panelConvert" role="tabpanel" hidden>
+    <div class="tab-panel" id="panelConvert" data-panel="convert" role="tabpanel" hidden>
       <p class="panel-intro">보증금을 월세로 돌릴 때 받을 수 있는 월세에는 <strong>법정 상한</strong>이 있습니다. 기준금리를 넣으면 전환율이 자동으로 계산됩니다.</p>
 
       <div class="calc-grid">
@@ -715,7 +715,7 @@
   </div>
 </footer>
 
-<script src="realestate.js?v=20261128d" defer></script>
-<script src="nav.js?v=20261128d" defer></script>
+<script src="realestate.js?v=20261128e" defer></script>
+<script src="nav.js?v=20261128e" defer></script>
 </body>
 </html>

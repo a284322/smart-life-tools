@@ -32,8 +32,8 @@
 <meta name="twitter:description" content="부양가족·식대 비과세 반영. 퇴직금과 퇴직소득세도 같은 화면에서 계산합니다.">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232563eb'/%3E%3Ctext x='32' y='44' font-size='34' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3E%E2%82%A9%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css?v=20261128d">
-<link rel="stylesheet" href="calculator.css?v=20261128d">
+<link rel="stylesheet" href="styles.css?v=20261128e">
+<link rel="stylesheet" href="calculator.css?v=20261128e">
 
 <meta name="naver-site-verification" content="15ac2f25795a5444a1af3225a831af4b8e3e77b3" />
 
@@ -179,12 +179,12 @@
     <h2 id="calcTitle" class="sr-only">연봉 실수령액·퇴직금 계산기</h2>
 
     <div class="tabbar two" role="tablist" aria-label="계산기 종류">
-      <button type="button" class="tab-btn is-active" data-tab="pay" data-panel="panelPay" role="tab" aria-selected="true" aria-controls="panelPay">연봉 실수령액<small>세금 떼고 얼마</small></button>
-      <button type="button" class="tab-btn" data-tab="severance" data-panel="panelSeverance" role="tab" aria-selected="false" aria-controls="panelSeverance">퇴직금<small>그동안 모인 돈</small></button>
+      <button type="button" class="tab-btn is-active" data-tab="pay" data-panel="pay" role="tab" aria-selected="true" aria-controls="panelPay">연봉 실수령액<small>세금 떼고 얼마</small></button>
+      <button type="button" class="tab-btn" data-tab="severance" data-panel="severance" role="tab" aria-selected="false" aria-controls="panelSeverance">퇴직금<small>그동안 모인 돈</small></button>
     </div>
 
     <!-- ---------- 탭 1: 연봉 실수령액 ---------- -->
-    <div class="tab-panel" id="panelPay" role="tabpanel">
+    <div class="tab-panel" id="panelPay" data-panel="pay" role="tabpanel">
       <p class="panel-intro">연봉(또는 월급)과 부양가족 수만 넣으면 <strong>4대보험료·소득세·지방소득세</strong>를 뺀 월 실수령액이 바로 나옵니다. 값을 바꾸면 결과도 즉시 바뀝니다.</p>
 
       <div class="calc-grid">
@@ -312,7 +312,7 @@
     </div>
 
     <!-- ---------- 탭 2: 퇴직금 ---------- -->
-    <div class="tab-panel" id="panelSeverance" role="tabpanel" hidden>
+    <div class="tab-panel" id="panelSeverance" data-panel="severance" role="tabpanel" hidden>
       <p class="panel-intro">입사일과 퇴사일, 최근 3개월 급여와 상여금을 넣으면 <strong>1일 평균임금</strong>과 <strong>예상 퇴직금</strong>, 퇴직소득세까지 계산합니다. 1년 미만 근무는 퇴직금 대상이 아닙니다.</p>
 
       <div class="calc-grid">
@@ -608,7 +608,7 @@
   </div>
 </footer>
 
-<script src="salary.js?v=20261128d" defer></script>
-<script src="nav.js?v=20261128d" defer></script>
+<script src="salary.js?v=20261128e" defer></script>
+<script src="nav.js?v=20261128e" defer></script>
 </body>
 </html>
