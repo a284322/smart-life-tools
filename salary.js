@@ -59,6 +59,13 @@
   }
   function daysBetween(a, b) { return Math.round((b - a) / 86400000); }
   function addMonths(d, m) { return new Date(d.getFullYear(), d.getMonth() + m, d.getDate()); }
+  /* 말일 보정: 12월 31일에서 3개월 전은 9월 30일 */
+  function addMonthsClamp(d, m) {
+    var base = new Date(d.getFullYear(), d.getMonth() + m, 1);
+    var last = new Date(base.getFullYear(), base.getMonth() + 1, 0).getDate();
+    base.setDate(Math.min(d.getDate(), last));
+    return base;
+  }
 
   /* ---------------- 소득세 엔진 ---------------- */
   function earnedIncomeDeduction(gross) {
@@ -166,8 +173,9 @@
 
   function calcSeverance(start, end, salary3m, bonusYear, leaveYear) {
     var days = Math.max(0, daysBetween(start, end));
-    var windowStart = addMonths(end, -3);
-    var days3m = Math.max(1, daysBetween(windowStart, end));
+    var windowStart = addMonthsClamp(end, -3);
+    windowStart.setDate(windowStart.getDate() + 1);
+    var days3m = Math.max(1, daysBetween(windowStart, end) + 1);
     var bonusPart = Math.max(0, bonusYear) * 3 / 12;
     var leavePart = Math.max(0, leaveYear) * 3 / 12;
     var totalWage = Math.max(0, salary3m) + bonusPart + leavePart;
