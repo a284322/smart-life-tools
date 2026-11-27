@@ -216,6 +216,12 @@ body.tojeong .f-total-eyebrow { letter-spacing: -.01em; }
   body.tojeong .f-lucky { grid-template-columns: 1fr; }
 }
 
+/* ---------- 모바일 내비: fortune.css 가 신년운세 링크를 숨기므로 토정비결에서는 되살린다 ---------- */
+@media (max-width: 640px) {
+  body.tojeong .site-header .site-nav a[data-nav="fortune"] { display: inline; }
+  body.tojeong .site-header .site-nav a[data-nav="tojeong"] { display: none; }
+}
+
 /* ---------- 월별 차트: is-good/is-caution 은 .f-col 에 붙으므로 막대 색을 여기서 잇는다 ---------- */
 .f-col.is-good .f-bar { background: linear-gradient(180deg, #d9952f, #a8530b); }
 .f-col.is-caution .f-bar { background: linear-gradient(180deg, #d7958b, #a8322a); opacity: .9; }
