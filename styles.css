@@ -1373,3 +1373,6 @@ a.tool-card h3::after {
   -webkit-mask-image: linear-gradient(to right, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
   mask-image: linear-gradient(to right, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
 }
+
+/* hidden 속성이 display 규칙(.field-row, .chips 등)에 밀리지 않게 */
+[hidden] { display: none !important; }
