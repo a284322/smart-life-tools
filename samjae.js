@@ -104,7 +104,7 @@
     var next = samjaeInfo(idx, 2028);
 
     $('#sjZodiac').textContent = name + '띠';
-    $('#sjSummary').textContent = '2027년 정미년 · ' + rel.grade +
+    $('#sjSummary').textContent = '2027년 정미년 · ' + rel.rel +
       (DAEBAK[idx] ? ' · ' + DAEBAK[idx] : '') +
       (sj && sj.inPeriod ? ' · ' + sj.phase : ' · 삼재 아님');
     $('#sjSanjae').textContent = sj && sj.inPeriod ? sj.phase : '해당 없음';
@@ -132,7 +132,7 @@
             ? '삼재의 가운데 해입니다. 체력과 관계가 흔들리기 쉬우니 건강검진과 재무 점검처럼 나를 관리하는 일에 시간을 쓰세요.'
             : '삼재의 첫해입니다. 큰 투자나 창업처럼 되돌리기 어려운 결정은 조건을 한 번 더 확인하고 시작하세요.') + '</p>';
     }
-    if (DAEBAK[idx]) {
+    if (DAEBAK[idx] && rel.grade !== '대박띠') {
       advice += '<p><strong>대박띠.</strong> 2027년 띠 관계에서 좋은 자리입니다. 사람을 통해 기회가 오는 해로 보니, 제안이 오면 조건을 정리해 두었다가 받아 보세요.</p>';
     }
     $('#sjAdvice').innerHTML = advice;
