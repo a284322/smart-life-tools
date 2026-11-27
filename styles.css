@@ -152,6 +152,15 @@ h1, h2, h3 { line-height: 1.3; letter-spacing: -.02em; margin: 0; }
   .site-nav a[data-nav="guide"] { display: none; }
 }
 
+/* 도구가 늘어난 만큼 좁은 화면에서 메뉴 간격을 줄인다 */
+@media (max-width: 1000px) {
+  .site-nav { gap: 14px; font-size: 13.5px; }
+}
+@media (max-width: 400px) {
+  .site-nav { gap: 6px; font-size: 11.5px; }
+  .brand-mark { width: 28px; height: 28px; border-radius: 9px; font-size: 15px; }
+}
+
 /* ---------- Hero ---------- */
 .hero {
   background:
@@ -780,6 +789,25 @@ label.switch-label.switch-row .switch { margin-top: 2px; }
   margin-top: 2px;
   font-size: 11.5px;
   color: var(--muted);
+}
+
+/* ---------- 무료 도구 카드 링크 ---------- */
+a.tool-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+a.tool-card:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  border-color: #bfdbfe;
+  box-shadow: var(--shadow);
+}
+a.tool-card h3::after {
+  content: " →";
+  font-weight: 500;
+  color: var(--blue);
 }
 
 /* ---------- Sections ---------- */

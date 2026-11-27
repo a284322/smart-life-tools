@@ -1,0 +1,217 @@
+/* =========================================================
+   2027 정미년 무료 토정비결 – tojeong.html 전용
+   fortune.css(한지빛·금빛·주홍) 위에 토정비결용 조각만 얹는다.
+   ========================================================= */
+
+body.tojeong .hero h1 { letter-spacing: -.03em; }
+
+/* ---------- 상반기 · 하반기 ---------- */
+.t-halves {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+@media (max-width: 620px) {
+  .t-halves { grid-template-columns: 1fr; gap: 10px; }
+}
+
+.t-half {
+  padding: 17px 18px 16px;
+  background: #fffdf7;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.t-half h4 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  color: var(--f-gold);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.t-half h4 span {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted-2);
+  letter-spacing: 0;
+}
+.t-half h4 b {
+  font-family: var(--f-serif);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--f-seal);
+  background: rgba(179, 38, 30, .07);
+  border: 1px solid rgba(179, 38, 30, .14);
+  border-radius: 6px;
+  padding: 1px 6px;
+}
+.t-half p {
+  margin: 0;
+  font-size: 13.5px;
+  line-height: 1.72;
+  color: #3b322a;
+  word-break: keep-all;
+}
+.t-half .t-half-score {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 3px;
+  margin-top: 10px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+.t-half .t-half-score b {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--f-gold);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- 월별 핵심 한 줄 ---------- */
+.t-month-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.t-month-list li {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 10px;
+  align-items: start;
+  padding: 11px 14px;
+  background: #fffdf7;
+  font-size: 13px;
+  line-height: 1.62;
+  color: #3b322a;
+}
+.t-month-list li:nth-child(odd) { background: #fdf8ee; }
+.t-month-list .t-mn {
+  font-weight: 800;
+  font-size: 12.5px;
+  color: var(--f-gold);
+  letter-spacing: -.01em;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.t-month-list .t-mk {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink-2);
+  margin-bottom: 1px;
+}
+.t-month-list .t-md { color: var(--muted); font-size: 12.5px; }
+.t-month-list li.is-good .t-mn { color: var(--f-seal); }
+.t-month-list li.is-caution .t-mk { color: #8f1d16; }
+
+@media (max-width: 480px) {
+  .t-month-list li { grid-template-columns: 40px 1fr; padding: 10px 12px; }
+}
+
+/* ---------- 행운 번호 ---------- */
+.t-balls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 18px;
+}
+.t-ball {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: #fff;
+  background: linear-gradient(150deg, #c2842a 0%, #a3620a 100%);
+  box-shadow: 0 6px 14px -8px rgba(120, 70, 10, .8), inset 0 1px 0 rgba(255, 255, 255, .35);
+  letter-spacing: -.02em;
+}
+.t-ball.is-bonus {
+  background: linear-gradient(150deg, #c8382e 0%, #91201a 100%);
+  box-shadow: 0 6px 14px -8px rgba(140, 25, 20, .85), inset 0 1px 0 rgba(255, 255, 255, .3);
+}
+.t-ball-sep {
+  align-self: center;
+  font-size: 15px;
+  color: var(--muted-2);
+  padding: 0 2px;
+}
+.t-ball-tag {
+  display: block;
+  width: 100%;
+  font-size: 11.5px;
+  color: var(--muted-2);
+  margin-top: -6px;
+}
+@media (max-width: 400px) {
+  .t-ball { width: 40px; height: 40px; font-size: 14.5px; }
+  .t-balls { gap: 6px; }
+}
+
+/* ---------- 신년운세·계산기 연결 ---------- */
+.t-cross {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+@media (max-width: 780px) {
+  .t-cross { grid-template-columns: 1fr; }
+}
+.t-cross-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 18px 16px;
+  background: #fffdf7;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: inherit;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+.t-cross-card:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  border-color: var(--f-gold-soft);
+  box-shadow: var(--shadow);
+}
+.t-cross-card .f-glyph {
+  flex: 0 0 auto;
+  margin: 0;
+}
+.t-cross-card h3 {
+  margin: 0 0 5px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  color: var(--ink);
+}
+.t-cross-card p {
+  margin: 0 0 8px;
+  font-size: 13px;
+  line-height: 1.66;
+  color: var(--muted);
+  word-break: keep-all;
+}
+.t-cross-go {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--f-gold);
+}
+
+/* ---------- 결과 카드 안 여백 보정 ---------- */
+body.tojeong .f-panel + .f-panel { margin-top: 18px; }
+body.tojeong .f-total-eyebrow { letter-spacing: -.01em; }
+@media (max-width: 560px) {
+  body.tojeong .f-lucky { grid-template-columns: 1fr; }
+}
