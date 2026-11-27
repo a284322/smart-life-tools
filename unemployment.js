@@ -108,9 +108,16 @@
     $('uDays').textContent = days + '일';
     $('uMonthly').textContent = won(monthly);
 
-    var note = daily >= cfg.floor && raw60 <= cfg.floor
-      ? (u.year === 2027 ? '평균임금이 낮아 2027년 하한액이 적용됩니다.' : '평균임금이 낮아 2026년 하한액이 적용됩니다.')
-      : (baseRaw > LIMIT_BASE ? '기초일액 상한에 걸려 상한액으로 계산했습니다.' : '이직 전 평균임금의 60%로 계산했습니다.');
+    var note;
+    if (cfg.floor > cfg.cap && raw60 > cfg.floor) {
+      note = '2027년은 하한액(' + won(cfg.floor) + ')이 상한액(' + won(cfg.cap) + ')보다 높아 하한액으로 계산했습니다.';
+    } else if (raw60 <= cfg.floor) {
+      note = '평균임금이 낮아 ' + u.year + '년 하한액이 적용됩니다.';
+    } else if (baseRaw > LIMIT_BASE) {
+      note = '기초일액 상한에 걸려 상한액으로 계산했습니다.';
+    } else {
+      note = '이직 전 평균임금의 60%로 계산했습니다.';
+    }
     $('uNote').textContent = note;
 
     // 계산 과정
