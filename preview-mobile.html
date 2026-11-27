@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>모바일 미리보기 (임시)</title>
+<style>
+  body { margin: 0; background: #e5e7eb; font: 13px/1.45 system-ui, -apple-system, "Malgun Gothic", sans-serif; }
+  .bar { position: sticky; top: 0; z-index: 99; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;
+         background: #111827; color: #fff; padding: 8px 12px; }
+  .bar b { margin-right: 10px; font-size: 13px; }
+  .bar span { color: #9ca3af; margin: 0 4px 0 10px; font-size: 12px; }
+  .bar button { font: inherit; padding: 4px 9px; border: 0; border-radius: 6px; background: #374151; color: #fff; cursor: pointer; }
+  .bar button:hover { background: #4b5563; }
+  .bar button.on { background: #2563eb; }
+  .wrap { display: flex; flex-wrap: wrap; gap: 14px; padding: 12px; align-items: flex-start; }
+  .phone { background: #fff; box-shadow: 0 6px 18px -10px rgba(0,0,0,.5); }
+  .phone h2 { margin: 0; padding: 5px 8px; font-size: 11px; font-weight: 700; color: #6b7280; background: #f3f4f6; }
+  iframe { border: 0; display: block; width: 390px; height: 1500px; }
+  .p360 iframe { width: 360px; height: 620px; }
+</style>
+</head>
+<body>
+<div class="bar">
+  <b>모바일 미리보기 (임시 페이지)</b>
+  <button data-t="car" data-y="0" class="on">자동차세 상단</button>
+  <button data-t="car" data-y="620">자동차세 계산</button>
+  <button data-t="car" data-y="1700">자동차세 결과</button>
+  <button data-t="car" data-y="2700">자동차세 기준·신청</button>
+  <span>|</span>
+  <button data-t="toj" data-y="0">토정비결 상단</button>
+  <button data-t="toj" data-y="700">토정비결 입력</button>
+  <button data-t="toj" data-y="1250">토정비결 총운</button>
+  <button data-t="toj" data-y="2050">토정비결 월별</button>
+  <button data-t="toj" data-y="2900">토정비결 행운</button>
+</div>
+
+<div class="wrap">
+  <div class="phone">
+    <h2>car-tax.html · 390px</h2>
+    <iframe id="car" src="car-tax.html" loading="eager"></iframe>
+  </div>
+  <div class="phone">
+    <h2>tojeong.html · 390px (1985-03-15 결과)</h2>
+    <iframe id="toj" src="tojeong.html?y=1985&amp;m=3&amp;d=15&amp;c=s" loading="eager"></iframe>
+  </div>
+  <div class="phone p360">
+    <h2>car-tax.html · 360px</h2>
+    <iframe id="car360" src="car-tax.html"></iframe>
+  </div>
+  <div class="phone p360">
+    <h2>tojeong.html · 360px</h2>
+    <iframe id="toj360" src="tojeong.html"></iframe>
+  </div>
+</div>
+
+<script>
+  var btns = document.querySelectorAll('.bar button');
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener('click', function () {
+      var f = document.getElementById(this.getAttribute('data-t'));
+      try { f.contentWindow.scrollTo(0, parseInt(this.getAttribute('data-y'), 10)); } catch (e) {}
+      var all = document.querySelectorAll('.bar button');
+      for (var j = 0; j < all.length; j++) all[j].classList.remove('on');
+      this.classList.add('on');
+    });
+  }
+  /* 미리보기에서는 본문 광고 슬롯을 잠시 숨겨 레이아웃만 본다 (임시 페이지) */
+  ['car', 'toj', 'car360', 'toj360'].forEach(function (id) {
+    var f = document.getElementById(id);
+    f.addEventListener('load', function () {
+      try {
+        var d = f.contentDocument;
+        d.querySelectorAll('.ad-slot').forEach(function (el) { el.style.display = 'none'; });
+      } catch (e) {}
+    });
+  });
+</script>
+</body>
+</html>

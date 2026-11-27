@@ -188,10 +188,30 @@
   ];
 
   var BAND = [
-    { min: 80, label: '기회가 열리는 달', tip: '미뤄 둔 일을 시작하기 좋아요. 먼저 움직이는 쪽이 이깁니다.' },
-    { min: 65, label: '무난하게 흐르는 달', tip: '큰 변화 없이 흐릅니다. 하던 일을 꾸준히 이어 가세요.' },
-    { min: 52, label: '천천히 가는 달', tip: '속도보다 방향을 점검하세요. 서두르면 되돌아와야 합니다.' },
-    { min: 0, label: '쉬어 가는 달', tip: '결정을 미루고 몸과 마음을 정비하세요. 지출은 작게 두세요.' }
+    { min: 80, label: '기회가 열리는 달', tips: [
+      '새로운 일을 시작하기 좋아요. 먼저 움직이는 쪽이 이깁니다.',
+      '사람을 만나 제안하기 좋은 때예요. 미뤄 둔 연락을 이때 하세요.',
+      '돈이 움직이는 달입니다. 들어오는 길과 나가는 곳을 함께 보세요.',
+      '몸이 가벼운 달이에요. 미뤄 둔 검진이나 운동을 시작하기 좋습니다.'
+    ] },
+    { min: 65, label: '무난하게 흐르는 달', tips: [
+      '큰 변화 없이 흐릅니다. 하던 일을 꾸준히 이어 가세요.',
+      '특별한 일보다 일상이 힘이 되는 때입니다. 생활 리듬을 지키세요.',
+      '새로 벌이기보다 정리하는 쪽이 남습니다. 서류와 돈을 한 번 점검하세요.',
+      '관계는 잔잔합니다. 약속을 지키는 것만으로 신뢰가 쌓입니다.'
+    ] },
+    { min: 52, label: '천천히 가는 달', tips: [
+      '속도보다 방향을 점검하세요. 서두르면 되돌아와야 합니다.',
+      '결정을 서두르지 마세요. 하루만 두고 보면 답이 보입니다.',
+      '몸이 먼저 신호를 보내는 달입니다. 잠을 조금 더 챙기세요.',
+      '지출이 새기 쉬운 때입니다. 작은 구독과 약속을 정리하세요.'
+    ] },
+    { min: 0, label: '쉬어 가는 달', tips: [
+      '결정을 미루고 몸과 마음을 정비하세요. 지출은 작게 두세요.',
+      '무리한 약속과 큰 지출은 피하세요. 쉬는 것도 일입니다.',
+      '말이 오해를 부르기 쉬운 달입니다. 확인하고 다시 말하세요.',
+      '컨디션이 흔들리는 때입니다. 미뤄 둔 병원 일이 있으면 지금 가세요.'
+    ] }
   ];
 
   /* ---------- 유틸 ---------- */
@@ -459,9 +479,9 @@
     });
 
     $('tGoodMonth').textContent = r.good[0].month + '월 · ' + r.good[1].month + '월';
-    $('tGoodNote').textContent = r.good[0].month + '월은 ' + r.good[0].key.k + ' — ' + bandOf(r.good[0].score).tip;
+    $('tGoodNote').textContent = r.good[0].month + '월은 ' + r.good[0].key.k + ' — ' + tipOf(r.good[0]);
     $('tBadMonth').textContent = r.bad[0].month + '월 · ' + r.bad[1].month + '월';
-    $('tBadNote').textContent = r.bad[0].month + '월은 ' + r.bad[0].key.k + ' — ' + bandOf(r.bad[0].score).tip;
+    $('tBadNote').textContent = r.bad[0].month + '월은 ' + r.bad[0].key.k + ' — ' + tipOf(r.bad[0]);
 
     /* 월별 핵심 한 줄 */
     var list = $('tMonthList');
@@ -474,7 +494,7 @@
       li.innerHTML =
         '<span class="t-mn">' + mo.month + '월</span>' +
         '<span><span class="t-mk">' + mo.key.k + ' · ' + band.label + '</span>' +
-        '<span class="t-md">' + mo.key.d + '. ' + band.tip + '</span></span>';
+        '<span class="t-md">' + mo.key.d + '. ' + tipOf(mo) + '</span></span>';
       list.appendChild(li);
     });
 
@@ -499,6 +519,10 @@
   function bandOf(sc) {
     for (var i = 0; i < BAND.length; i++) if (sc >= BAND[i].min) return BAND[i];
     return BAND[BAND.length - 1];
+  }
+  function tipOf(mo) {
+    var band = bandOf(mo.score);
+    return band.tips[mo.month % band.tips.length];
   }
 
   function buildText(r) {

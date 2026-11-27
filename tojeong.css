@@ -215,3 +215,10 @@ body.tojeong .f-total-eyebrow { letter-spacing: -.01em; }
 @media (max-width: 560px) {
   body.tojeong .f-lucky { grid-template-columns: 1fr; }
 }
+
+/* ---------- 월별 차트: is-good/is-caution 은 .f-col 에 붙으므로 막대 색을 여기서 잇는다 ---------- */
+.f-col.is-good .f-bar { background: linear-gradient(180deg, #d9952f, #a8530b); }
+.f-col.is-caution .f-bar { background: linear-gradient(180deg, #d7958b, #a8322a); opacity: .9; }
+
+/* ---------- 결과 카드는 길어서 고정하지 않는다 ---------- */
+body.cartax .result-card { position: static; }
