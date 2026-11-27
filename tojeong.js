@@ -463,12 +463,15 @@
 
     /* 월별 차트 */
     $('tMonthSub').textContent = '제 ' + r.gwa + ' 괘의 수리를 열두 달에 나눠 본 흐름이에요.';
+    var goodSet = {}, badSet = {};
+    r.good.forEach(function (m) { goodSet[m.month] = 1; });
+    r.bad.forEach(function (m) { badSet[m.month] = 1; });
     var chart = $('tChart');
     chart.innerHTML = '';
     r.months.forEach(function (mo) {
       var col = el('div', 'f-col');
-      if (mo.score >= 84) col.classList.add('is-good');
-      else if (mo.score <= 62) col.classList.add('is-caution');
+      if (goodSet[mo.month]) col.classList.add('is-good');
+      else if (badSet[mo.month]) col.classList.add('is-caution');
       var h = clamp(Math.round(((mo.score - 40) / (97 - 40)) * 100), 14, 100);
       var b = el('div', 'f-bar');
       b.style.height = h + '%';
@@ -489,8 +492,8 @@
     r.months.forEach(function (mo) {
       var band = bandOf(mo.score);
       var li = el('li');
-      if (mo.score >= 84) li.classList.add('is-good');
-      else if (mo.score <= 62) li.classList.add('is-caution');
+      if (goodSet[mo.month]) li.classList.add('is-good');
+      else if (badSet[mo.month]) li.classList.add('is-caution');
       li.innerHTML =
         '<span class="t-mn">' + mo.month + '월</span>' +
         '<span><span class="t-mk">' + mo.key.k + ' · ' + band.label + '</span>' +
