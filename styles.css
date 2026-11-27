@@ -1367,3 +1367,9 @@ a.tool-card h3::after {
 /* 탭 개수에 맞춘 열 배치 (2개·3개) */
 .tabbar.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .tabbar.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+/* 내비게이션이 가로로 넘칠 때: 양 끝을 부드럽게 가려 '더 있다'는 것을 보여 준다 */
+.site-nav.has-overflow {
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, #000 16px, #000 calc(100% - 16px), transparent 100%);
+}

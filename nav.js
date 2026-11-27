@@ -26,15 +26,20 @@
     }
   }
 
+  function markOverflow() {
+    nav.classList.toggle('has-overflow', nav.scrollWidth > nav.clientWidth + 2);
+  }
+
   function reveal() {
+    markOverflow();
     if (!active) return;
     if (nav.scrollWidth <= nav.clientWidth + 2) return;
     var a = active.getBoundingClientRect();
     var n = nav.getBoundingClientRect();
     if (a.left < n.left + 4) {
-      nav.scrollLeft += (a.left - n.left) - 10;
+      nav.scrollLeft += (a.left - n.left) - 20;
     } else if (a.right > n.right - 4) {
-      nav.scrollLeft += (a.right - n.right) + 10;
+      nav.scrollLeft += (a.right - n.right) + 20;
     }
   }
 
