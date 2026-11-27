@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZX4R8GGZR8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZX4R8GGZR8');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2027 중위소득·내 지원금 찾기 – 기준 중위소득 비율로 받을 수 있는 지원금 | 스마트 라이프 툴즈</title>
+<meta name="description" content="가구원 수와 월 소득만 넣으면 2027년(2026년) 기준 중위소득 대비 비율과, 신청 가능한 정부 지원금을 바로 정리해 드립니다. 생계·의료·주거·교육급여, 기초연금, 청년월세, 근로장려금, 국민취업지원제도, 내일배움카드까지 신청 가능·조건 확인·해당 없음으로 나눠 보여드려요. 회원가입·개인정보 입력 없이 30초.">
+<meta name="keywords" content="2027 중위소득, 2026 기준 중위소득, 중위소득 32% 40% 48% 50% 60%, 내 지원금 찾기, 정부 지원금 조회, 생계급여, 의료급여, 주거급여, 교육급여, 차상위계층, 기초연금, 청년월세, 근로장려금, 국민취업지원제도, 내일배움카드, 에너지바우처, 아동수당, 복지로 모의계산, 4인가구 중위소득 692만">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="스마트 라이프 툴즈">
+<meta name="theme-color" content="#2563eb">
+<link rel="canonical" href="https://tools.niceluckydays.com/subsidy.html">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="스마트 라이프 툴즈">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="2027 중위소득·내 지원금 찾기 – 나는 몇 % 구간일까">
+<meta property="og:description" content="가구원 수와 월 소득으로 중위소득 비율과 받을 수 있는 지원금을 한 번에 확인하세요.">
+<meta property="og:url" content="https://tools.niceluckydays.com/subsidy.html">
+<meta property="og:image" content="https://tools.niceluckydays.com/assets/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2027 중위소득·내 지원금 찾기">
+<meta name="twitter:description" content="소득만 넣으면 중위소득 대비 비율과 신청 가능한 지원금이 바로 나옵니다.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232563eb'/%3E%3Ctext x='32' y='44' font-size='34' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='white'%3E%E2%82%A9%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="calculator.css">
+<link rel="stylesheet" href="subsidy.css?v=20261128">
+
+<meta name="naver-site-verification" content="15ac2f25795a5444a1af3225a831af4b8e3e77b3" />
+
+<!-- Google AdSense (자동 광고 + 디스플레이 광고 단위) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7905972440351261" crossorigin="anonymous"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://tools.niceluckydays.com/#website",
+      "url": "https://tools.niceluckydays.com/",
+      "name": "스마트 라이프 툴즈",
+      "inLanguage": "ko-KR",
+      "description": "돈과 생활에 바로 쓰는 무료 계산기 모음. 연말정산 환급금, 자동차세 연납, 실업급여, 내 지원금 찾기, 2027 신년운세·토정비결·타로를 제공합니다."
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://tools.niceluckydays.com/subsidy.html#app",
+      "name": "2027 중위소득·내 지원금 찾기",
+      "url": "https://tools.niceluckydays.com/subsidy.html",
+      "applicationCategory": "FinanceApplication",
+      "applicationSubCategory": "CalculatorApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "ko-KR",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+      "featureList": [
+        "2026·2027년 기준 중위소득 대비 내 소득 비율 계산",
+        "생계 32%·의료 40%·주거 48%·교육 50% 선정기준 판정",
+        "기초연금·청년월세·근로장려금·국민취업지원제도·내일배움카드 등 12개 지원금 신청 가능 여부",
+        "가구원 수별 중위소득 32~60% 금액 표",
+        "예상 생계급여액(선정기준 − 소득) 계산"
+      ],
+      "description": "가구원 수와 월 소득을 넣으면 기준 중위소득 대비 비율을 계산하고, 그 구간에서 신청할 수 있는 정부·지자체 지원금을 신청 가능·조건 확인·해당 없음으로 나눠 보여 주는 무료 웹 도구입니다."
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://tools.niceluckydays.com/subsidy.html#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "스마트 라이프 툴즈", "item": "https://tools.niceluckydays.com/" },
+        { "@type": "ListItem", "position": 2, "name": "2027 중위소득·내 지원금 찾기", "item": "https://tools.niceluckydays.com/subsidy.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://tools.niceluckydays.com/subsidy.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "2027년 기준 중위소득은 얼마인가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "2027년 기준 중위소득은 1인 가구 월 2,736,042원, 2인 4,480,645원, 3인 5,718,091원, 4인 6,929,885원, 5인 8,063,019원, 6인 9,129,201원입니다. 2026년(4인 6,494,738원)보다 6.70% 오른 금액으로, 2026년 7월 중앙생활보장위원회에서 의결했습니다." }
+        },
+        {
+          "@type": "Question",
+          "name": "중위소득 32%·48% 같은 비율은 무슨 뜻인가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "복지 급여마다 가구 소득의 기준선을 기준 중위소득의 몇 %로 정해 둡니다. 생계급여 32%, 의료급여 40%, 주거급여 48%, 교육급여 50%이고, 차상위계층과 청년월세는 50~60% 선을 씁니다. 내 소득인정액이 그 금액 이하이면 신청 대상이 됩니다." }
+        },
+        {
+          "@type": "Question",
+          "name": "소득인정액은 월급과 어떻게 다른가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "소득인정액은 실제 소득에서 근로소득공제 등을 뺀 소득평가액에, 재산을 소득으로 환산한 금액을 더한 값입니다. 월급이 같아도 재산이 많으면 소득인정액이 높아져 지원 대상에서 빠질 수 있습니다. 정확한 값은 복지로 모의계산이나 주민센터에서 확인할 수 있습니다." }
+        },
+        {
+          "@type": "Question",
+          "name": "생계급여는 얼마나 받나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "가구별 생계급여 선정기준액에서 그 가구의 소득인정액을 뺀 금액을 매달 받습니다. 2027년 1인 가구 선정기준은 875,533원, 4인 가구는 2,217,563원입니다. 부양의무자 기준도 함께 심사합니다." }
+        },
+        {
+          "@type": "Question",
+          "name": "여러 지원금을 동시에 받을 수 있나요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "겹쳐 받을 수 있는 것과 아닌 것이 있습니다. 생계급여와 주거급여·교육급여는 함께 신청하는 경우가 많고, 청년월세처럼 다른 월세 지원사업과 중복되지 않는 제도도 있습니다. 신청 전에 주민센터나 복지로에서 중복 여부를 확인하세요." }
+        },
+        {
+          "@type": "Question",
+          "name": "계산 결과와 실제 수급 결과가 다른 이유는 무엇인가요?",
+          "acceptedAnswer": { "@type": "Answer", "text": "이 도구는 월 소득만으로 기준선과 비교하는 간편 추정입니다. 실제 심사에서는 재산의 소득환산액, 부양의무자, 가구원 구성, 거주 지역에 따른 기준임대료 등이 함께 반영됩니다. 최종 판정은 주민센터와 복지로 신청을 통해 이뤄집니다." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#calc">지원금 찾기로 바로 가기</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="스마트 라이프 툴즈 홈">
+      <span class="brand-mark" aria-hidden="true">₩</span>
+      <span class="brand-text">스마트 라이프 툴즈</span>
+    </a>
+    <nav class="site-nav" aria-label="주요 메뉴">
+      <a href="index.html" data-nav="calc">연말정산<span class="nav-long"> 계산기</span></a>
+      <a href="calculator.html" data-nav="life">생활계산기</a>
+      <a href="car-tax.html" data-nav="cartax">자동차세<span class="nav-long"> 연납</span></a>
+      <a href="unemployment.html" data-nav="unemp">실업급여<span class="nav-long"> 계산</span></a>
+      <a href="subsidy.html" class="is-active" data-nav="subsidy" aria-current="page">내 지원금<span class="nav-long"> 찾기</span></a>
+      <a href="fortune.html" data-nav="fortune"><span class="nav-long">2027 </span>신년운세</a>
+      <a href="tojeong.html" data-nav="tojeong">토정비결</a>
+      <a href="tarot.html" data-nav="tarot">타로<span class="nav-long">·궁합</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">2027년 기준 중위소득 반영 · 회원가입 없이 바로 확인</p>
+      <h1>2027 중위소득·내 지원금 찾기</h1>
+      <p class="hero-sub">가구원 수와 월 소득만 넣으면 <strong>내가 중위소득 몇 % 구간</strong>인지,<br class="br-desktop"> 그 구간에서 받을 수 있는 지원금이 무엇인지 바로 정리해 드립니다.</p>
+      <ul class="hero-badges">
+        <li>2026·2027년 기준 중위소득</li>
+        <li>지원금 12종 판정</li>
+        <li>입력값 서버 전송 없음</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AdSense 광고: 상단 배너 (도구 위) -->
+  <div class="container">
+    <div class="ad-slot" data-ad-slot="top">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7905972440351261"
+           data-ad-slot="6595337008"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </div>
+
+  <!-- ===== 계산기 ===== -->
+  <section id="calc" class="calc-section container" aria-labelledby="calcTitle">
+    <h2 id="calcTitle" class="sr-only">중위소득 비율과 내 지원금 찾기</h2>
+    <p class="panel-intro">값을 바꾸면 <strong>비율과 지원금 목록이 바로 바뀝니다</strong>. 정확한 수급 여부는 주민센터·복지로 신청으로 확정됩니다.</p>
+
+    <div class="calc-grid">
+      <form class="card form-card" id="subsidyForm" novalidate>
+        <div class="card-head">
+          <h3>내 가구 정보</h3>
+          <span class="label-note">월 기준</span>
+        </div>
+
+        <fieldset class="field-group">
+          <legend>1. 기준 연도</legend>
+          <div class="field">
+            <span class="field-label" id="yearLabel">중위소득 기준</span>
+            <div class="seg" role="group" aria-labelledby="yearLabel">
+              <button type="button" class="seg-btn" data-year="2026" aria-pressed="false">2026년</button>
+              <button type="button" class="seg-btn is-active" data-year="2027" aria-pressed="true">2027년</button>
+            </div>
+            <p class="help">2027년 기준 중위소득은 2026년 7월에 의결된 금액입니다. 4인 가구 692만 9,885원.</p>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>2. 가구원 수</legend>
+          <div class="field">
+            <div class="chips" role="group" aria-label="가구원 수">
+              <button type="button" class="chip is-active" data-house="1">1인</button>
+              <button type="button" class="chip" data-house="2">2인</button>
+              <button type="button" class="chip" data-house="3">3인</button>
+              <button type="button" class="chip" data-house="4">4인</button>
+              <button type="button" class="chip" data-house="5">5인</button>
+              <button type="button" class="chip" data-house="6">6인</button>
+              <button type="button" class="chip" data-house="7">7인 이상</button>
+            </div>
+            <p class="help">주민등록표에 함께 있는 가구원 기준입니다. 7인 이상은 7인 금액으로 계산합니다.</p>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>3. 월 소득</legend>
+          <div class="field">
+            <span class="field-label" id="modeLabel">소득 입력 방식</span>
+            <div class="seg" role="group" aria-labelledby="modeLabel">
+              <button type="button" class="seg-btn is-active" data-mode="gross" aria-pressed="true">세전 월소득</button>
+              <button type="button" class="seg-btn" data-mode="recognized" aria-pressed="false">소득인정액</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="income" id="incomeLabel">월 소득(세전) <span class="unit">원</span></label>
+            <div class="input-wrap">
+              <input id="income" name="income" type="text" inputmode="numeric" autocomplete="off"
+                     data-unit="num" placeholder="2,000,000" value="2,000,000">
+              <span class="suffix">원</span>
+            </div>
+            <div class="chips" role="group" aria-label="대표 월소득 빠른 선택">
+              <button type="button" class="chip" data-income="1000000">100만</button>
+              <button type="button" class="chip is-active" data-income="2000000">200만</button>
+              <button type="button" class="chip" data-income="3000000">300만</button>
+              <button type="button" class="chip" data-income="4000000">400만</button>
+              <button type="button" class="chip" data-income="5000000">500만</button>
+            </div>
+            <p class="help" id="modeHelp">급여·사업소득의 세전 월평균입니다. 복지 급여는 재산을 소득으로 환산한 소득인정액으로 다시 심사합니다.</p>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-group">
+          <legend>4. 해당하는 상황 (복수 선택)</legend>
+          <div class="check-row" role="group" aria-label="해당하는 상황">
+            <button type="button" class="check-pill" data-flag="youth" aria-pressed="false">청년(19~34세)</button>
+            <button type="button" class="check-pill" data-flag="newly" aria-pressed="false">신혼·출산·자녀</button>
+            <button type="button" class="check-pill" data-flag="midlife" aria-pressed="false">중장년(35~64세)</button>
+            <button type="button" class="check-pill" data-flag="senior" aria-pressed="false">어르신(65세 이상)</button>
+            <button type="button" class="check-pill" data-flag="jobseeker" aria-pressed="false">구직자</button>
+            <button type="button" class="check-pill" data-flag="disabled" aria-pressed="false">장애인</button>
+          </div>
+          <p class="help">선택한 상황에 따라 기초연금·청년월세·국민취업지원제도 같은 지원금의 판정이 달라집니다.</p>
+        </fieldset>
+
+        <div class="form-foot">
+          <button type="submit" class="calc-btn">내 지원금 찾기</button>
+        </div>
+      </form>
+
+      <aside class="card result-card" id="resultCard">
+        <div class="result-banner">
+          <p class="result-label">기준 중위소득 대비</p>
+          <p class="result-amount" id="ratioNum">0%</p>
+          <p class="result-note" id="ratioLine"></p>
+        </div>
+
+        <div class="gauge">
+          <div class="gauge-head">
+            <b>0%</b>
+            <b>기준 중위소득 <span id="miAmount">0원</span></b>
+            <b>150%</b>
+          </div>
+          <div class="gauge-track">
+            <div class="gauge-fill" id="gaugeFill"></div>
+            <span class="gauge-pin" style="left:21.33%"></span>
+            <span class="gauge-pin" style="left:26.67%"></span>
+            <span class="gauge-pin" style="left:32%"></span>
+            <span class="gauge-pin" style="left:33.33%"></span>
+            <span class="gauge-pin" style="left:40%"></span>
+            <span class="gauge-pin" style="left:66.67%"></span>
+          </div>
+          <div class="gauge-scale" aria-hidden="true">
+            <span style="left:0%">0%</span>
+            <span style="left:21.33%">32%</span>
+            <span style="left:33.33%">50%</span>
+            <span style="left:66.67%">100%</span>
+            <span style="left:100%">150%</span>
+          </div>
+        </div>
+
+        <div class="judge-row">
+          <div class="j-ok"><span>신청 가능</span><strong id="cntOk">0개</strong></div>
+          <div class="j-check"><span>조건 확인</span><strong id="cntCheck">0개</strong></div>
+          <div><span>해당 없음</span><strong id="cntNo">0개</strong></div>
+        </div>
+
+        <p class="table-note" id="judgeNote"></p>
+
+        <p class="result-disclaimer">
+          소득만으로 기준선과 비교한 간편 판정입니다. 실제 심사는 재산의 소득환산액, 부양의무자, 가구원 구성, 지역별 기준임대료를 함께 봅니다. 복지로(bokjiro.go.kr) 모의계산이나 주민센터에서 확인하세요.
+        </p>
+      </aside>
+    </div>
+
+    <!-- AdSense 광고: 결과 카드 아래 -->
+    <div class="ad-slot ad-slot-inline" data-ad-slot="result-bottom">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7905972440351261"
+           data-ad-slot="2808135239"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </section>
+
+  <!-- ===== 지원금 목록 ===== -->
+  <section class="container section prog-section" aria-labelledby="progTitle">
+    <div class="section-head">
+      <h2 id="progTitle">내 구간에서 받을 수 있는 지원금</h2>
+      <p>신청 가능 · 조건 확인 · 해당 없음 순서로 정리했습니다. 카드를 누르지 않아도 아래에 신청처가 함께 표시됩니다.</p>
+    </div>
+    <div id="progList"></div>
+  </section>
+
+  <!-- ===== 중위소득 표 ===== -->
+  <section id="table" class="container section section-tint">
+    <div class="section-head">
+      <h2><span id="miTableYear">2027년</span> 기준 중위소득과 급여별 기준선</h2>
+      <p>생계 32% · 의료 40% · 주거 48% · 교육 50% · 청년월세 등 60% 기준입니다.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th scope="col">가구원 수</th>
+            <th scope="col">중위소득 100%</th>
+            <th scope="col">생계 32%</th>
+            <th scope="col">의료 40%</th>
+            <th scope="col">주거 48%</th>
+            <th scope="col">교육 50%</th>
+            <th scope="col">60%</th>
+          </tr>
+        </thead>
+        <tbody id="miTableBody"></tbody>
+      </table>
+    </div>
+    <p class="table-hint">표는 좌우로 넘겨서 볼 수 있어요.</p>
+    <p class="table-note">8인 이상 가구는 1인 늘어날 때마다 2026년 95만 9,198원, 2027년 100만 3,464원이 더해집니다. 금액은 월 기준입니다.</p>
+  </section>
+
+  <!-- ===== 신청 방법 ===== -->
+  <section class="container section">
+    <div class="section-head">
+      <h2>신청은 이렇게 하세요</h2>
+      <p>대부분 주민센터 방문이나 복지로 온라인으로 한 번에 신청할 수 있습니다.</p>
+    </div>
+    <div class="info-grid">
+      <article class="info-card">
+        <span class="info-tag">1</span>
+        <h3>복지로 모의계산</h3>
+        <p>bokjiro.go.kr에서 소득·재산을 넣으면 실제 선정 기준으로 받을 수 있는 급여를 미리 계산해 줍니다.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-tag">2</span>
+        <h3>주민센터 상담</h3>
+        <p>주소지 읍·면·동 행정복지센터에서 신청서를 쓰고, 필요한 서류를 안내받습니다. 대리 신청도 가능합니다.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-tag">3</span>
+        <h3>세금·구직 지원은 따로</h3>
+        <p>근로장려금은 홈택스(5월 정기), 국민취업지원제도·내일배움카드는 고용24에서 신청합니다.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-tag">4</span>
+        <h3>탈락해도 다시 확인</h3>
+        <p>소득·재산은 매년 바뀝니다. 기준 중위소득이 오르면 지난해 탈락한 가구도 대상이 될 수 있습니다.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="container section">
+    <div class="section-head">
+      <h2>자주 묻는 질문</h2>
+      <p>중위소득과 지원금 기준에서 가장 많이 헷갈리는 부분만 모았습니다.</p>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>2027년 기준 중위소득은 얼마인가요?</summary>
+        <p>1인 2,736,042원, 2인 4,480,645원, 3인 5,718,091원, 4인 6,929,885원, 5인 8,063,019원, 6인 9,129,201원입니다. 2026년(4인 6,494,738원)보다 6.70% 오른 금액으로, 역대 최대 인상 폭입니다.</p>
+      </details>
+      <details>
+        <summary>중위소득 32%·48% 같은 비율은 무슨 뜻인가요?</summary>
+        <p>복지 급여마다 기준선을 기준 중위소득의 몇 %로 정해 둡니다. 생계급여 32%, 의료급여 40%, 주거급여 48%, 교육급여 50%이고, 차상위계층은 50%, 청년월세는 60% 선을 씁니다. 내 소득인정액이 그 금액 이하이면 신청 대상입니다.</p>
+      </details>
+      <details>
+        <summary>월급과 소득인정액은 어떻게 다른가요?</summary>
+        <p>소득인정액은 실제 소득에서 근로소득공제 등을 뺀 소득평가액에 재산을 소득으로 환산한 금액을 더한 값입니다. 월급이 같아도 재산이 많으면 소득인정액이 높아져 대상에서 빠질 수 있습니다. 이 도구에서는 두 방식을 골라 넣을 수 있습니다.</p>
+      </details>
+      <details>
+        <summary>생계급여는 얼마나 받나요?</summary>
+        <p>가구별 선정기준액에서 소득인정액을 뺀 금액을 매달 받습니다. 2027년 선정기준은 1인 875,533원, 4인 2,217,563원입니다. 부양의무자 기준도 함께 심사하고, 실제 지급액은 매년 다시 정해집니다.</p>
+      </details>
+      <details>
+        <summary>여러 지원금을 동시에 받을 수 있나요?</summary>
+        <p>겹쳐 받을 수 있는 것과 아닌 것이 있습니다. 생계급여와 주거·교육급여는 함께 신청하는 경우가 많고, 청년월세는 다른 월세 지원사업과 중복되지 않습니다. 신청 전에 주민센터나 복지로에서 중복 여부를 확인하세요.</p>
+      </details>
+      <details>
+        <summary>청년월세는 언제 신청하나요?</summary>
+        <p>2026년부터 매년 신규자를 모집하는 계속사업으로 바뀌었습니다. 2026년 접수는 3월 30일~5월 29일이었고, 다음 모집 일정은 아직 공지되지 않았습니다. 만 19~34세 무주택 청년이 부모와 따로 살면서 청년가구 소득이 중위 60% 이하일 때 신청할 수 있습니다.</p>
+      </details>
+      <details>
+        <summary>계산 결과와 실제 수급 결과가 다른 이유는 무엇인가요?</summary>
+        <p>이 도구는 월 소득만으로 기준선과 비교하는 간편 추정입니다. 실제 심사에서는 재산의 소득환산액, 부양의무자, 가구원 구성, 지역별 기준임대료까지 반영됩니다. 최종 판정은 주민센터와 복지로 신청으로 이뤄집니다.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===== 다른 도구 ===== -->
+  <section class="container section section-tint">
+    <div class="section-head">
+      <h2>함께 보면 좋은 계산기</h2>
+      <p>회원가입 없이 바로 쓰는 무료 계산기입니다.</p>
+    </div>
+
+    <div class="info-grid">
+      <a class="info-card tool-card" href="unemployment.html">
+        <span class="info-tag">실업</span>
+        <h3>실업급여·근로장려금 계산기</h3>
+        <p>퇴직 전 월급으로 구직급여 총액과 근로장려금 예상액을 함께 계산합니다.</p>
+      </a>
+      <a class="info-card tool-card" href="index.html">
+        <span class="info-tag">환급</span>
+        <h3>2026 연말정산 환급금 계산기</h3>
+        <p>연봉과 공제 항목을 넣으면 돌려받을 세금이 나옵니다.</p>
+      </a>
+      <a class="info-card tool-card" href="calculator.html">
+        <span class="info-tag">생활</span>
+        <h3>월급 실수령액·대출이자·퇴직금</h3>
+        <p>2026년 4대보험 요율 반영. 세전 연봉에서 실수령액까지.</p>
+      </a>
+      <a class="info-card tool-card" href="tarot.html">
+        <span class="info-tag">운세</span>
+        <h3>무료 원카드 타로 &amp; 궁합</h3>
+        <p>오늘의 카드 한 장과 2027 정미년 궁합 점수를 무료로 봅니다.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="container">
+    <p class="page-disclaimer">
+      <strong>안내.</strong> 이 페이지는 2026년 11월 기준 보건복지부 고시(2026년 기준 중위소득·생계·의료급여 선정기준), 2026년 7월 의결된 2027년 기준 중위소득, 2026년 기초연금 선정기준액, 국세청·고용노동부 안내로 만든 참고용 도구입니다. 법률·복지 자문이 아니며 실제 수급 여부와 금액은 신청 기관의 심사로 정해집니다.
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark small" aria-hidden="true">₩</span>
+      <div>
+        <p class="footer-title">스마트 라이프 툴즈</p>
+        <p class="footer-desc">돈과 생활에 바로 쓰는 계산기</p>
+      </div>
+    </div>
+    <nav class="footer-nav" aria-label="바닥글 메뉴">
+      <a href="index.html">연말정산 계산기</a>
+      <a href="calculator.html">생활계산기</a>
+      <a href="car-tax.html">자동차세 연납</a>
+      <a href="unemployment.html">실업급여 계산기</a>
+      <a href="subsidy.html">내 지원금 찾기</a>
+      <a href="fortune.html">2027 신년운세</a>
+      <a href="tojeong.html">2027 토정비결</a>
+      <a href="tarot.html">타로·궁합</a>
+      <a href="about.html">사이트 소개</a>
+      <a href="privacy.html">개인정보처리방침</a>
+      <a href="mailto:a284322@gmail.com">문의 a284322@gmail.com</a>
+    </nav>
+    <p class="copyright">© 2026 스마트 라이프 툴즈. 계산 결과는 참고용이며 복지·법률 자문이 아닙니다.</p>
+  </div>
+</footer>
+
+<script src="subsidy.js?v=20261128" defer></script>
+<script src="nav.js?v=20261128" defer></script>
+</body>
+</html>
