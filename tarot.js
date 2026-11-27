@@ -382,7 +382,7 @@
     var m1 = conflictMonth(a.z), m2 = conflictMonth(b.z);
     var warn = [];
     warn.push('<strong>2027년 ' + m1 + '월</strong>은 ' + (a.name || '나') + '의 띠(' + a.zodiac + ')와 부딪히는 달입니다. 큰 결정이나 말다툼을 피하세요.');
-    if (m2 !== m1) warn.push('<strong>2027년 ' + m2 + '월</strong>은 ' + (b.name || '상대') + '의 띠(' + b.zodiac + ')에 힘이 실리는 달이라, 상대의 주장이 강해질 수 있습니다.');
+    if (m2 !== m1) warn.push('<strong>2027년 ' + m2 + '월</strong>은 상대의 띠(' + b.zodiac + ')와 부딪히는 달이라, 상대가 예민해지기 쉽습니다. 말을 아끼는 게 좋아요.');
     warn.push('<strong>2027년 7월(미월)</strong>은 정미년의 기운이 한곳에 몰리는 달입니다. 두 사람 모두 감정이 앞서기 쉬우니, 중요한 이야기는 8월로 미루는 편이 좋습니다.');
     var warnHtml = '';
     for (var w = 0; w < warn.length; w++) warnHtml += '<li>' + warn[w] + '</li>';
