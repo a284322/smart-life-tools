@@ -1425,6 +1425,7 @@ body.fortune .luck-mesh-box {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   grid-template-areas: "icon body" "go go";
+  align-content: space-between;
   gap: 4px 11px;
   padding: 14px 14px 12px;
   background: #fff;
@@ -1476,7 +1477,7 @@ body.fortune .luck-mesh-card { background: #fffdf8; }
 }
 .luck-mesh-go {
   grid-area: go;
-  margin-top: 8px;
+  margin-top: 10px;
   justify-self: start;
   display: inline-flex;
   align-items: center;
